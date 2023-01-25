@@ -36,11 +36,11 @@ import logoSketch from "@/assets/img/logos/sketch.jpg";
 //hooks
 const body = document.getElementsByTagName("body")[0];
 onMounted(() => {
-  body.classList.add("presentation-page");
+  body.classList.add("wedding-invitation-page");
   body.classList.add("bg-gray-200");
 });
 onUnmounted(() => {
-  body.classList.remove("presentation-page");
+  body.classList.remove("wedding-invitation-page");
   body.classList.remove("bg-gray-200");
 });
 </script>
