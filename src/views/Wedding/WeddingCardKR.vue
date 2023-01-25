@@ -66,7 +66,7 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
-    <!-- <WeddingPhotoGrid /> -->
+    <WeddingPhotoGrid />
     <!-- <PresentationInformation /> -->
     <PresentationExample :data="data" />
     <!-- <PresentationPages /> -->
