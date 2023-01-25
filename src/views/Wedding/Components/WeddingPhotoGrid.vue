@@ -1,14 +1,26 @@
-<div id="app">
-    <v-app>
-      <v-container>
-        <v-row justify="space-between">
-          <v-col cols="auto">
-            <v-btn>button</v-btn>
-          </v-col>
-          <v-col cols="auto">
-            <v-btn>button</v-btn>
-          </v-col>
-        </v-row>
-      </v-container>
+<template>
+  <div id="wedding-photo">
+    <v-app id="inspire">
+      <v-row>
+        <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
+          <v-img :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
+            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`" aspect-ratio="1" class="grey lighten-2">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
     </v-app>
   </div>
+</template>
+
+<script>
+  // new Vue({
+  //   el: '#wedding-photo',
+  //   vuetify: new Vuetify(),
+
+  // });
+</script>
