@@ -7,9 +7,10 @@ import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
 import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
-//Vue Material Kit 2 components
+//Vue components
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
+import WeddingPhotoGrid from "./components/WeddingPhotoGrid.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
@@ -65,46 +66,13 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
+    <!-- <WeddingPhotoGrid /> -->
     <!-- <PresentationInformation /> -->
     <PresentationExample :data="data" />
-    <PresentationPages />
-    <BuiltByDevelopers />
+    <!-- <PresentationPages /> -->
+    <!-- <BuiltByDevelopers /> -->    
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <FilledInfoCard class="p-4" :color="{ text: 'white', background: 'bg-gradient-success' }"
-            :icon="{ component: 'flag', color: 'white' }" title="Getting Started"
-            description="Check the possible ways of working with our product and the necessary files for building your own project."
-            :action="{
-              route:
-                'https://www.creative-tim.com/learning-lab/vue/overview/material-kit/',
-              label: { text: 'Let\'s start', color: 'white' }
-            }" />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard class="px-lg-1 mt-lg-0 mt-4 p-4" height="h-100"
-            :icon="{ component: 'precision_manufacturing', color: 'success' }" title="Plugins" description="Get inspiration and have an overview about the plugins that we
-                used to create the Material Kit." :action="{
-                  route:
-                    'https://www.creative-tim.com/learning-lab/vue/input/material-kit/',
-                  label: { text: 'Read more' }
-                }" />
-        </div>
-        <div class="col-lg-4">
-          <FilledInfoCard class="px-lg-1 mt-lg-0 mt-4 p-4" :icon="{ component: 'receipt_long', color: 'success' }"
-            title="Utility Classes" description="Material Kit is giving you a lot of pre-made elements. For those
-                who want flexibility, we included many utility classes." :action="{
-                  route:
-                    'https://www.creative-tim.com/learning-lab/vue/utilities/material-kit/',
-                  label: { text: 'Read more' }
-                }" />
-        </div>
-      </div>
-    </div>
-    <PresentationTestimonials />
-
-    <div class="container-fluid mt-sm-5 border-radius-xl" :style="{
+    <!-- <div class="container-fluid mt-sm-5 border-radius-xl" :style="{
       background: 'linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))'
     }">
       <div class="page-header py-6 py-md-5 my-sm-3 mb-3 border-radius-xl" :style="{
@@ -132,9 +100,9 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="d-flex flex-column w-100 text-center p-5 mb-8">
           <h3>Available on these technologies</h3>
@@ -163,8 +131,8 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
-    <div class="py-5">
+    </div> -->
+    <!-- <div class="py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 ms-auto">
@@ -182,7 +150,7 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <DefaultFooter />
 </template>
