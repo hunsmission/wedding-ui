@@ -10,7 +10,7 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 //Vue components
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
-import WeddingPhotoGrid from "./components/WeddingPhotoGrid.vue";
+import WeddingPhotoGrid from "../../../src/views/Wedding/components/WeddingPhotoGrid.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
