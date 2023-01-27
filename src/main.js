@@ -19,6 +19,11 @@ const vuetify = createVuetify({
     directives,
 });
 
+// var Vue = require('vue')
+// var VueRouter = require('vue-router')
+// Vue.use(require('vue-resource'));
+// Vue.use(require('vue-router'));
+
 const app = createApp(App);
 
 app.use(createPinia());
