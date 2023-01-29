@@ -11,6 +11,8 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import WeddingPhotoGrid from "../../../src/views/Wedding/components/WeddingPhotoGrid.vue";
+import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
+import WeddingPhotoLayout from "../../../src/views/Wedding/components/WeddingPhotoLayout.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
@@ -66,7 +68,9 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
+    <WeddingImgGrid />
     <WeddingPhotoGrid />
+    <WeddingPhotoLayout/>
     <!-- <PresentationInformation /> -->
     <PresentationExample :data="data" />
     <!-- <PresentationPages /> -->

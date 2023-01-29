@@ -14,6 +14,9 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
+// VMasonry
+import {VueMasonryPlugin} from 'vue-masonry';
+
 const vuetify = createVuetify({
     components,
     directives,
@@ -30,4 +33,5 @@ app.use(createPinia());
 app.use(router);
 app.use(materialKit);
 app.use(vuetify);
+app.use(VueMasonryPlugin)
 app.mount("#app");
