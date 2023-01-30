@@ -16,7 +16,7 @@ import WeddingPhotoLayout from "../../../src/views/Wedding/components/WeddingPho
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
-import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue"
+import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
@@ -34,6 +34,7 @@ import logoVue from "@/assets/img/mk-header-6.jpg";
 import logoAngular from "@/assets/img/logos/angular.jpg";
 import logoReact from "@/assets/img/logos/react.jpg";
 import logoSketch from "@/assets/img/logos/sketch.jpg";
+import WeddingPhotoExample from "../../../src/views/Wedding/Components/WeddingPhotoExample.vue";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
@@ -57,12 +58,18 @@ onUnmounted(() => {
   </div>
   <Header>
     <div class="col-lg-7 mx-3 position-relative">
-      <h1 class="text-left text-black pt-2 mb-n5 me-2" :style="{ display: 'inline-block ' }">
+      <h1
+        class="text-left text-black pt-2 mb-n5 me-2"
+        :style="{ display: 'inline-block ' }"
+      >
         03.25
       </h1>
     </div>
-    <div class="page-header min-vh-50" :style="`background-image: url(${vueMkHeader})`" loading="lazy">
-    </div>
+    <div
+      class="page-header min-vh-50"
+      :style="`background-image: url(${vueMkHeader})`"
+      loading="lazy"
+    ></div>
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
@@ -70,11 +77,16 @@ onUnmounted(() => {
     <WeddingInvitationMessage />
     <WeddingImgGrid />
     <WeddingPhotoGrid />
-    <WeddingPhotoLayout/>
+    <WeddingPhotoLayout />
+
+    <!--샘플입니다-->
+    <!--    <WeddingPhotoExample />-->
+    <!---->
+
     <!-- <PresentationInformation /> -->
     <PresentationExample :data="data" />
     <!-- <PresentationPages /> -->
-    <!-- <BuiltByDevelopers /> -->    
+    <!-- <BuiltByDevelopers /> -->
 
     <!-- <div class="container-fluid mt-sm-5 border-radius-xl" :style="{
       background: 'linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25))'
