@@ -75,12 +75,12 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
-    <WeddingImgGrid />
-    <WeddingPhotoGrid />
+    <!-- <WeddingImgGrid />
+    <WeddingPhotoGrid /> -->
     <WeddingPhotoLayout />
 
     <!--샘플입니다-->
-    <!--    <WeddingPhotoExample />-->
+    <!-- <WeddingPhotoExample /> -->
     <!---->
 
     <!-- <PresentationInformation /> -->

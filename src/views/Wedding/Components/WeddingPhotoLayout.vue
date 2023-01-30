@@ -1,19 +1,11 @@
 <template>
-    <div id="app">
-        <v-app>
-            <v-container>
-                <masonry :cols="3" :gutter="10" class="card-style">
-                    <v-card v-for="item in items" :key="item.id" class="mt-2 mb-2" color="grey lighten-3" flat>
-                        <v-toolbar flat dense color="transparent" class="font-weight-bold">
-                            {{ item.title }}
-                        </v-toolbar>
-                        <v-img :src="item.img"></v-img>
-                    </v-card>
-                </masonry>
-            </v-container>
-
-        </v-app>
-    </div>
+    <v-container>
+        <masonry :gutter="{ default: '10px', 700: '15px' }" :cols="{ default: 4, 1000: 3, 700: 3, 500: 3, 400: 3, 100: 3, 10: 3}">
+            <v-card v-for="item in items" :key="item.id" class="mt-2 mb-2" color="blue lighten-3">
+                <v-img :src="item.img"></v-img>
+            </v-card>
+        </masonry>
+    </v-container>
 </template>
 
 <script>
@@ -50,7 +42,7 @@ export default {
                 {
                     id: 2,
                     title: "def",
-                    img: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href                        
+                    img: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
                 },
                 {
                     id: 6,
