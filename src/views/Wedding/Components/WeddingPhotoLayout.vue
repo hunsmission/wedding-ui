@@ -1,6 +1,7 @@
 <template>
     <v-container>
-        <masonry :gutter="{ default: '10px', 700: '15px' }" :cols="{ default: 4, 1000: 3, 700: 3, 500: 3, 400: 3, 100: 3, 10: 3}">
+        <masonry :gutter="{ default: '10px', 700: '15px' }"
+            :cols="{ default: 4, 1000: 3, 700: 3, 500: 3, 400: 3, 100: 3, 10: 3 }">
             <v-card v-for="item in items" :key="item.id" class="mt-2 mb-2" color="blue lighten-3">
                 <v-img :src="item.img"></v-img>
             </v-card>
@@ -9,7 +10,6 @@
 </template>
 
 <script>
-import path from 'path';
 
 export default {
     name: 'app',

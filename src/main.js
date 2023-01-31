@@ -16,6 +16,7 @@ import * as directives from 'vuetify/directives'
 
 // VMasonry
 import {VueMasonryPlugin} from 'vue-masonry';
+import MasonryWall from '@yeger/vue-masonry-wall'
 
 const vuetify = createVuetify({
     components,
@@ -34,4 +35,5 @@ app.use(router);
 app.use(materialKit);
 app.use(vuetify);
 app.use(VueMasonryPlugin)
+app.use(MasonryWall)
 app.mount("#app");
