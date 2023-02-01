@@ -10,13 +10,12 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 //Vue components
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
-import WeddingPhotoGrid from "../../../src/views/Wedding/components/WeddingPhotoGrid.vue";
 import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
-import WeddingPhotoLayout from "../../../src/views/Wedding/components/WeddingPhotoLayout2.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
+import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";

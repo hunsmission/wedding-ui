@@ -19,6 +19,8 @@ import * as directives from 'vuetify/directives'
 import MasonryWall from '@yeger/vue-masonry-wall'
 
 // v-viewer
+import 'viewerjs/dist/viewer.css'
+import VueViewer from 'v-viewer'
 
 
 const vuetify = createVuetify({
@@ -39,5 +41,5 @@ app.use(materialKit);
 app.use(vuetify);
 //app.use(VueMasonryPlugin)
 app.use(MasonryWall)
-
+app.use(VueViewer)
 app.mount("#app");

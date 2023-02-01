@@ -1,6 +1,9 @@
 <template>
-  <section class="pt-3 pb-4" id="wedding-photo-grid">
-    <h5 class="mb-24">성훈 &#10084; 진원 </h5>
+  <section class="pt-3 pb-4" id="wedding-photo-grid" style="background-color: #F2F2F2">    
+    <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '900' , fontSize: '90%', marginBottom: '1px'}">
+      성훈 &#10084; 진원 <br>
+      우리들의 아름다운 시작
+    </p>
     <!-- <div class="images" v-viewer="{option: viewerOptions, movable: false }"> -->
     <div class="images" v-viewer="viewerOptions">
       <masonry-wall :items="items" :ssr-columns="3" :columnWidth="120" :options="options" @append="append"
@@ -22,7 +25,7 @@
 
 <script>
 export default {
-  name: "ExampleMasonry",
+  name: "weddingPhotoLayout",
   data() {
     return {
       options: {
@@ -50,32 +53,32 @@ export default {
         {
           title: 'Wedding Photo 1',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 2',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 3',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 4',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 5',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 6',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
+          image: new URL(`../../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
         },
       ]
     }
