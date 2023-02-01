@@ -12,7 +12,7 @@ import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import WeddingPhotoGrid from "../../../src/views/Wedding/components/WeddingPhotoGrid.vue";
 import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
-import WeddingPhotoLayout from "../../../src/views/Wedding/components/WeddingPhotoLayout.vue";
+import WeddingPhotoLayout from "../../../src/views/Wedding/components/WeddingPhotoLayout2.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
