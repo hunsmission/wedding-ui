@@ -13,7 +13,7 @@ body {
 
 #app {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   /* background-color: #f9b4d4; */
   /* background-color: #fbc7df; */
   background-color: #fddae9;

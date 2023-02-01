@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <v-container>
         <masonry :gutter="{ default: '10px', 700: '15px' }"
             :cols="{ default: 4, 1000: 3, 700: 3, 500: 3, 400: 3, 100: 3, 10: 3 }">
@@ -54,4 +54,4 @@ export default {
     },
 }
 
-</script> -->
+</script>
