@@ -17,6 +17,7 @@ import LanguageNavTab from "./Components/LanguageNavTab.vue";
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
 import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
+import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
@@ -76,6 +77,7 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
+    <WeddingContact />
     <!-- <WeddingImgGrid />
     <WeddingPhotoGrid /> -->
     <WeddingPhotoLayout />
