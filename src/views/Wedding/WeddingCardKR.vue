@@ -11,6 +11,7 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
+import LanguageNavTab from "./Components/LanguageNavTab.vue";
 
 // sections
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
@@ -52,6 +53,7 @@ onUnmounted(() => {
     <div class="row">
       <div class="col-12">
         <NavbarDefault :sticky="false" />
+        <!-- <LanguageNavTab /> -->
       </div>
     </div>
   </div>

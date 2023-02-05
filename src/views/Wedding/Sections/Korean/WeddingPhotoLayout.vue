@@ -1,8 +1,8 @@
 <template>
-  <section class="pt-3 pb-4" id="wedding-photo-grid" style="background-color: #F2F2F2">    
+  <section class="pt-3 pb-4" id="wedding-photo-grid" >    <!-- style="background-color: #F2F2F2" -->
     <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '900' , fontSize: '90%', marginBottom: '1px'}">
-      성훈 &#10084; 진원 <br>
-      우리들의 아름다운 시작
+      Wedding Gallery <br>
+      <h6>성훈 &#10084; 진원 </h6>
     </p>
     <!-- <div class="images" v-viewer="{option: viewerOptions, movable: false }"> -->
     <div class="images" v-viewer="viewerOptions">
