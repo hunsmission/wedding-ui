@@ -2,8 +2,8 @@
 import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultCounterCard.vue";
 </script>
 
-<template>
-    <section class="pt-3 pb-4" id="invite-info" >
+<template>        
+    <section class="pt-3 pb-4" id="invite-info" >                
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 text-center mx-auto position-relative" style="padding-left: 0px; padding-right: 0px;">
