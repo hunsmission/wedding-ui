@@ -6,35 +6,38 @@ import IconMessage from "@/components/IconMessage.vue";
 
 <template>
     <section class="pt-3 pb-4" id="invite-info">
-        <div class="container">
+        <div class="container" style="padding-left: 0px; padding-right: 0px;">
             <div class="row">
-                <div class="col-lg-7 text-center mx-auto position-relative"
-                    style="padding-left: 0px; padding-right: 0px;">
-                    <img :src=image width="300" style="padding-left: 0px; padding-right: 0px;" />
+                <div class="col-lg-7 pb-4 text-center mx-auto position-relative"
+                    style="padding-left: 0px; padding-right: 0px; width: 100%;">
+                    <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />
                 </div>
-                <div style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #555;
-      ">
+                <div                 
+                    style="
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: #555;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                ">
                     <ul>
                         <li class="congratulations-contact groom-bride">
                             <div>신랑에게 축하 인사</div>
                             <div>
-                                <IconCall width="20" phoneNumber="010-4043-0989"></IconCall>
+                                <IconCall width="20" phoneNumber="010-2827-6829"></IconCall>
                             </div>
                             <div>
-                                <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
+                                <IconMessage width="20" phoneNumber="010-2827-6829"></IconMessage>
                             </div>
                         </li>
                         <li class="congratulations-contact groom-bride">
                             <div>신부에게 축하 인사</div>
                             <div>
-                                <IconCall width="20" phoneNumber="010-0000-0000"></IconCall>
+                                <IconCall width="20" phoneNumber="010-7376-0560"></IconCall>
                             </div>
                             <div>
-                                <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
+                                <IconMessage width="20" phoneNumber="010-7376-0560"></IconMessage>
                             </div>
                         </li>
                     </ul>
@@ -54,28 +57,28 @@ import IconMessage from "@/components/IconMessage.vue";
                         <ul>
                             <li>신랑측 혼주</li>
                             <li class="congratulations-contact parents">
-                                <div>아버지 서종호</div>
+                                <div>아버지 박기수</div>
                                 <div>
-                                    <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+                                    <IconCall width="15" phoneNumber="010-9070-6829"></IconCall>
                                 </div>
                                 <div>
-                                    <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+                                    <IconMessage width="15" phoneNumber="010-9070-6829"></IconMessage>
                                 </div>
                             </li>
                             <li class="congratulations-contact parents">
-                                <div>어머니 임성심</div>
+                                <div>어머니 백명옥</div>
                                 <div>
-                                    <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+                                    <IconCall width="15" phoneNumber="010-7112-6829"></IconCall>
                                 </div>
                                 <div>
-                                    <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+                                    <IconMessage width="15" phoneNumber="010-7112-6829"></IconMessage>
                                 </div>
                             </li>
                         </ul>
                         <ul>
                             <li>신부측 혼주</li>
                             <li class="congratulations-contact parents">
-                                <div>아버지 정준영</div>
+                                <div>아버지 나병선</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
                                 </div>
@@ -84,7 +87,7 @@ import IconMessage from "@/components/IconMessage.vue";
                                 </div>
                             </li>
                             <li class="congratulations-contact parents">
-                                <div>어머니 천필선</div>
+                                <div>어머니 김미주</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
                                 </div>

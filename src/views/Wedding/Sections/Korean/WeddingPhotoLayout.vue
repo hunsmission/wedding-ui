@@ -1,8 +1,8 @@
 <template>
   <section class="pt-3 pb-4" id="wedding-photo-grid" >    <!-- style="background-color: #F2F2F2" -->
-    <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '900' , fontSize: '90%', marginBottom: '1px'}">
+    <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '700' , fontSize: '80%', marginBottom: '1px'}">
       Wedding Gallery <br>
-      <h6>성훈 &#10084; 진원 </h6>
+      <h7>성훈 &#10084; 진원 Love Story</h7>
     </p>
     <!-- <div class="images" v-viewer="{option: viewerOptions, movable: false }"> -->
     <div class="images" v-viewer="viewerOptions">
@@ -36,9 +36,9 @@ export default {
         },
       },
       viewerOptions: {
-        ready: () => {
-          viewerInstance = this.$el.querySelector('.images').$viewer
-        },
+        // ready: () => {
+        //   viewerInstance = this.$el.querySelector('.images').$viewer
+        // },
         inline: false,
         viewed(e) {
           console.log(e.type);

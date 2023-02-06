@@ -20,6 +20,8 @@ import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
 import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
+import WeddingMap from "./Sections/Korean/WeddingMap.vue";
+import WeddingTest from "./Sections/WeddingTest.vue";
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
 import data from "./Sections/Data/designBlocksData";
@@ -77,7 +79,7 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <div
+    <!-- <div
       style="
         display: flex;
         flex-direction: column;
@@ -163,18 +165,15 @@ onUnmounted(() => {
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <WeddingInvitation />
     <WeddingInvitationMessage />
     <WeddingContact />
-    <!-- <WeddingImgGrid />
-    <WeddingPhotoGrid /> -->
     <WeddingPhotoLayout />
+    <WeddingMap />
+    <WeddingTest/>
 
-    <!--샘플입니다-->
-    <!-- <WeddingPhotoExample /> -->
-    <!---->
 
     <!-- <PresentationInformation /> -->
     <PresentationExample :data="data" />

@@ -22,16 +22,16 @@ import MasonryWall from '@yeger/vue-masonry-wall'
 import 'viewerjs/dist/viewer.css'
 import VueViewer from 'v-viewer'
 
+// Naver API
+import { createNaverMap } from "vue3-naver-maps";
+
+// Vue Clipboard
+import VueClipboard from 'vue3-clipboard';
 
 const vuetify = createVuetify({
     components,
     directives,
 });
-
-// var Vue = require('vue')
-// var VueRouter = require('vue-router')
-// Vue.use(require('vue-resource'));
-// Vue.use(require('vue-router'));
 
 const app = createApp(App);
 
@@ -42,4 +42,15 @@ app.use(vuetify);
 //app.use(VueMasonryPlugin)
 app.use(MasonryWall)
 app.use(VueViewer)
+app
+  .use(createNaverMap, {
+    clientId: "9e0m070dq8", // Required
+    category: "ncp", // Optional
+    subModules: [], // Optional, "panorama" | "geocoder" | "drawing" | "visualization"
+  })
+
+app.use(VueClipboard, {
+    autoSetContainer: true,
+    appendToBody: true,
+  })
 app.mount("#app");
