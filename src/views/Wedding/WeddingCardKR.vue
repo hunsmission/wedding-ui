@@ -50,6 +50,9 @@ onUnmounted(() => {
 </script>
 
 <template>
+  <a href="tel:010-4043-0989"><div>전화걸기</div></a>
+  <a href="sms:010-4043-0989"><div>문자보내기</div></a>
+  <a href="mailto:woojin.jung@emoldino.com"><div>메일보내기</div></a>
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
