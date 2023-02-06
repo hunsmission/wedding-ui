@@ -1,5 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
+import IconCall from "../../components/IconCall.vue";
+import IconMessage from "../../components/IconMessage.vue";
 
 //example components
 import NavbarDefault from "../../examples/navbars/NavbarDefault.vue";
@@ -50,9 +52,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <a href="tel:010-4043-0989"><div>전화걸기</div></a>
-  <a href="sms:010-4043-0989"><div>문자보내기</div></a>
-  <a href="mailto:woojin.jung@emoldino.com"><div>메일보내기</div></a>
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
@@ -78,6 +77,94 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #555;
+      "
+    >
+      <ul>
+        <li class="congratulations-contact groom-bride">
+          <div>신랑에게 축하 인사</div>
+          <div>
+            <IconCall width="20" phoneNumber="010-4043-0989"></IconCall>
+          </div>
+          <div>
+            <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
+          </div>
+        </li>
+        <li class="congratulations-contact groom-bride">
+          <div>신부에게 축하 인사</div>
+          <div>
+            <IconCall width="20" phoneNumber="010-0000-0000"></IconCall>
+          </div>
+          <div>
+            <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
+          </div>
+        </li>
+      </ul>
+      <div
+        style="
+          background-color: #555;
+          height: 50px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          margin-bottom: 20px;
+        "
+      >
+        혼주에게 전화하기
+      </div>
+      <div class="cantact-parents-container">
+        <ul>
+          <li>신랑측 혼주</li>
+          <li class="congratulations-contact parents">
+            <div>아버지 서종호</div>
+            <div>
+              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+            </div>
+            <div>
+              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+            </div>
+          </li>
+          <li class="congratulations-contact parents">
+            <div>어머니 임성심</div>
+            <div>
+              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+            </div>
+            <div>
+              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>신부측 혼주</li>
+          <li class="congratulations-contact parents">
+            <div>아버지 정준영</div>
+            <div>
+              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+            </div>
+            <div>
+              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+            </div>
+          </li>
+          <li class="congratulations-contact parents">
+            <div>어머니 천필선</div>
+            <div>
+              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+            </div>
+            <div>
+              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <WeddingInvitation />
     <WeddingInvitationMessage />
     <WeddingContact />
@@ -176,3 +263,57 @@ onUnmounted(() => {
   </div>
   <DefaultFooter />
 </template>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding-left: 0 !important;
+}
+.congratulations-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.congratulations-contact > div:nth-of-type(2) {
+  border-right: solid 1px #ddd;
+}
+
+.congratulations-contact.groom-bride > div:nth-of-type(1) {
+  margin-right: 25px;
+}
+
+.congratulations-contact.groom-bride > div:nth-of-type(2),
+.congratulations-contact.groom-bride > div:nth-of-type(3) {
+  padding: 0px 20px;
+}
+
+.congratulations-contact.parents > div:nth-of-type(1) {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.congratulations-contact.parents > div:nth-of-type(2),
+.congratulations-contact.parents > div:nth-of-type(3) {
+  padding: 0px 5px;
+}
+
+.cantact-parents-container {
+  display: flex;
+  width: 100%;
+}
+.cantact-parents-container > ul {
+  flex: 1;
+}
+
+.cantact-parents-container > ul > li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+</style>
