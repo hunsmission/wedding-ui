@@ -1,0 +1,72 @@
+<template>
+    <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->  
+            <div class="coverflow-example">
+                <swiper class="swiper" :modules="modules" :pagination="true" :effect="'coverflow'" :grab-cursor="true"
+                    :centered-slides="true" :slides-per-view="'auto'" :coverflow-effect="{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true
+                    }">
+                    <swiper-slide class="slide" v-for="index in 5" :key="index">
+                        <img :src="`./static/wedding/wedding-${index}.jpg`" />
+                    </swiper-slide>
+                </swiper>
+            </div>
+    </section>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { Pagination, EffectCoverflow } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/effect-coverflow'
+
+export default defineComponent({
+    name: 'swiper-example-3d-coverflow',
+    title: '3D Coverflow effect',    
+    components: {
+        Swiper,
+        SwiperSlide
+    },
+    setup() {
+        return {
+            modules: [Pagination, EffectCoverflow]
+        }
+    },    
+})
+
+</script>
+
+<style lang="scss" scoped>
+@import '@/assets/css/variables.scss';
+@import '@/assets/css/mixins.scss';
+@import '@/assets/css/style.scss';
+
+.coverflow-example {
+    @include swiper-wrapper($height: 380px);
+    position: relative;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .slide {
+        width: 300px;
+        height: 300px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+</style>

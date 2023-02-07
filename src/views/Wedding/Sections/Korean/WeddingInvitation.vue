@@ -5,7 +5,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
 <style>
 .vl {
   border-left: 2px solid rgb(128, 125, 126);
-  height: 50px;
+  height: 40px;
   position: auto;
   left: 50%;
   margin-left: 50%;
@@ -30,7 +30,7 @@ import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultC
           <p class="lead text-black px-1 mt-2" :style="{ fontWeight: '400' , fontSize: '110%'}">
             2023년 03월 25일 토요일 <br>
             오후 04시 20분<br>
-            더컨벤션 영등포점 다이너스티홀
+            더컨벤션 영등포점 / 다이너스티홀
           </p>
         </div>
       </div>

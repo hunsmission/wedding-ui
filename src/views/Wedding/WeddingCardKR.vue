@@ -19,6 +19,7 @@ import LanguageNavTab from "./Components/LanguageNavTab.vue";
 import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
 import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
+import WeddingPhotoLayout2 from "./Sections/Korean/WeddingPhotoLayout2.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
 import WeddingTest from "./Sections/WeddingTest.vue";
@@ -31,7 +32,7 @@ import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
 //import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
-import vueMkHeader from "@/assets/img/mk-header-6.jpg";
+import vueMkHeader from "@/assets/img/wedding/wedding-main2.jpg";
 import wavesWhite from "@/assets/img/waves-white.svg";
 import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
 import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
@@ -171,6 +172,7 @@ onUnmounted(() => {
     <WeddingInvitationMessage />
     <WeddingContact />
     <WeddingPhotoLayout />
+    <WeddingPhotoLayout2 />
     <WeddingMap />
     <WeddingTest/>
 

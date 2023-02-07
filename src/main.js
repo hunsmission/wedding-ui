@@ -28,6 +28,10 @@ import { createNaverMap } from "vue3-naver-maps";
 // Vue Clipboard
 import VueClipboard from 'vue3-clipboard';
 
+// SwiperClass
+import SwiperClass, { Pagination, EffectCoverflow } from 'swiper'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
 const vuetify = createVuetify({
     components,
     directives,
@@ -48,9 +52,10 @@ app
     category: "ncp", // Optional
     subModules: [], // Optional, "panorama" | "geocoder" | "drawing" | "visualization"
   })
-
 app.use(VueClipboard, {
     autoSetContainer: true,
     appendToBody: true,
   })
+SwiperClass.use(Pagination, EffectCoverflow);
+app.use(VueAwesomeSwiper);
 app.mount("#app");
