@@ -80,19 +80,19 @@ import IconMessage from "@/components/IconMessage.vue";
                             <li class="congratulations-contact parents">
                                 <div>아버지 나병선</div>
                                 <div>
-                                    <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+                                    <IconCall width="15" phoneNumber="010-4330-3936"></IconCall>
                                 </div>
                                 <div>
-                                    <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+                                    <IconMessage width="15" phoneNumber="010-4330-3936"></IconMessage>
                                 </div>
                             </li>
                             <li class="congratulations-contact parents">
                                 <div>어머니 김미주</div>
                                 <div>
-                                    <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
+                                    <IconCall width="15" phoneNumber="010-9500-0450"></IconCall>
                                 </div>
                                 <div>
-                                    <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
+                                    <IconMessage width="15" phoneNumber="010-9500-0450"></IconMessage>
                                 </div>
                             </li>
                         </ul>
