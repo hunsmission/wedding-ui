@@ -74,6 +74,7 @@ const onError = (e) => {
     <!-- Navigation Button-->
     <div class="cantact-parents-container pt-5">
       <ul>
+        <!-- <li><button type="button"><img src="../../../../assets/ico/Tmap.png" style="width:50%; height: 50%;"></button></li> -->
         <li><img src="../../../../assets/ico/Tmap.png" style="width:33%; height: 33%;"></li>
         <li>Tmap</li>
       </ul>
