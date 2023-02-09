@@ -1,14 +1,3 @@
-<!-- <script setup>
-import { NaverMap, NaverMarker} from "vue3-naver-maps";
-
-const onLoadMap = (map) => {
-  const latLng = new window.naver.maps.LatLng(37.5267957, 126.8989077); // window 생략 가능
-  map.setZoom(13);
-
-
-  map.setCenter(latLng); // Change Map Center
-};
-</script> -->
 <script setup>
 import { ref } from "vue";
 import {
@@ -85,13 +74,16 @@ const onError = (e) => {
     <!-- Navigation Button-->
     <div class="cantact-parents-container pt-5">
       <ul>
-        <li>버튼</li> 
+        <li>버튼</li>
+        <li>Tmap</li>
       </ul>
       <ul>
         <li>버튼</li>
+        <li>Kakao 네비</li>
       </ul>
       <ul>
         <li>버튼</li>
+        <li>네이버 네비</li>
       </ul>
     </div>
   </section>
