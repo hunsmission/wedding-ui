@@ -1,5 +1,9 @@
 <template>
     <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->
+        <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
+            Wedding Gallery <br>
+            <h7>성훈 &#10084; 진원 Love Story</h7>
+        </p>
         <div class="wedding-photo" v-viewer="viewerOptions">
             <swiper class="swiper" :modules="modules" :pagination="true" :effect="'coverflow'" :grab-cursor="true"
                 :centered-slides="true" :slides-per-view="'auto'" :coverflow-effect="{
@@ -8,7 +12,8 @@
                     depth: 100,
                     modifier: 1,
                     slideShadows: true
-                }">
+                }"                 
+                >
                 <swiper-slide class="slide" v-for="item in items" :key="item.title">
                     <!-- <img :src="`./static/wedding/wedding-${index}.jpg`" /> -->
                     <v-img :src="item.image" class="grey lighten-2" @click="show"></v-img> <!--:lazy-src="item.image"-->
@@ -179,7 +184,7 @@ export default defineComponent({
 .swiper {
     height: 100%;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 20px;
 
     .slide {

@@ -171,7 +171,7 @@ onUnmounted(() => {
     <WeddingInvitation />
     <WeddingInvitationMessage />
     <WeddingContact />
-    <WeddingPhotoLayout />
+    <!-- <WeddingPhotoLayout /> -->
     <WeddingPhotoLayout2 />
     <WeddingMap />
     <WeddingTest/>
