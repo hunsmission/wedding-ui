@@ -15,7 +15,6 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 // VMasonry
-//import { VueMasonryPlugin } from "vue-masonry";
 import MasonryWall from '@yeger/vue-masonry-wall'
 
 // v-viewer
@@ -32,6 +31,10 @@ import VueClipboard from 'vue3-clipboard';
 import SwiperClass, { Pagination, EffectCoverflow } from 'swiper'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
+// Axios
+import axios from 'axios' 
+import VueAxios from 'vue-axios'
+
 const vuetify = createVuetify({
     components,
     directives,
@@ -43,14 +46,13 @@ app.use(createPinia());
 app.use(router);
 app.use(materialKit);
 app.use(vuetify);
-//app.use(VueMasonryPlugin)
 app.use(MasonryWall)
 app.use(VueViewer)
 app
   .use(createNaverMap, {
     clientId: "9e0m070dq8", // Required
     category: "ncp", // Optional
-    subModules: [], // Optional, "panorama" | "geocoder" | "drawing" | "visualization"
+    subModules: [],  // Optional, "panorama" | "geocoder" | "drawing" | "visualization"
   })
 app.use(VueClipboard, {
     autoSetContainer: true,
@@ -58,4 +60,6 @@ app.use(VueClipboard, {
   })
 SwiperClass.use(Pagination, EffectCoverflow);
 app.use(VueAwesomeSwiper);
+app.use(VueAxios, axios);
+app.config.globalProperties.axios = axios; 
 app.mount("#app");

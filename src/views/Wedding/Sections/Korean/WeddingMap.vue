@@ -5,6 +5,7 @@ import {
   NaverMarker,
   NaverInfoWindow,
 } from "vue3-naver-maps";
+// import axios from 'axios';
 
 const marker = ref();
 const infoWindow = ref();
@@ -25,13 +26,13 @@ const mapOptions = {
   zoomControlOptions: { style: "SMALL", position: "TOP_LEFT" },
 };
 
-const message = '서울시 영등포구 국회대로38길 2길'
+const message = '서울시 영등포구 국회대로38길 2길';
 const onCopy = (e) => {
   alert('Copy address successfully : ' + e.text)
-}
+};
 const onError = (e) => {
   alert('Failed to copy texts')
-}
+};
 </script>
 
 <template>
@@ -74,21 +75,67 @@ const onError = (e) => {
     <!-- Navigation Button-->
     <div class="cantact-parents-container pt-5">
       <ul>
-        <!-- <li><button type="button"><img src="../../../../assets/ico/Tmap.png" style="width:50%; height: 50%;"></button></li> -->
-        <li><img src="../../../../assets/ico/Tmap.png" style="width:33%; height: 33%;"></li>
+        <li style="margin-bottom: 5px;">
+          <img src="../../../../assets/ico/Tmap.png" style="width:33%; height: 33%;" @click='tmapApiCall'>
+        </li>
         <li>Tmap</li>
       </ul>
       <ul>
-        <li><img src="../../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;"></li>
+        <li style="margin-bottom: 5px;">
+          <img src="../../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;" @click='kakaoMapApiCall'>
+        </li>
         <li>Kakao 내비</li>
       </ul>
       <ul>
-        <li><img src="../../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;"></li>
+        <li style="margin-bottom: 5px;">
+          <img src="../../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;" @click='naverMapApiCall'>
+        </li>
         <li>네이버 내비</li>
       </ul>
     </div>
   </section>
 </template>
+
+<script>
+import { ref } from "vue";
+import {
+  NaverMap,
+  NaverMarker,
+  NaverInfoWindow,
+} from "vue3-naver-maps";
+import axios from 'axios';
+
+export default {  
+  methods: {    
+    tmapApiCall: function () {
+      window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
+    },
+    // tmapApiCall() {            
+    //   axios.get('https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957')
+    //     .then(res => {
+    //       console.log("response data : " + JSON.stringify(res.data));      
+    //     })
+    //     .catch(function (error) {
+    //       console.log(error);
+    //     })
+    // },
+    kakaoMapApiCall: function () {        
+      window.Kakao.Navi.share({
+        name: '더컨벤션영등포점',
+        x: 126.8989077,
+        y: 37.5267957,
+        coordType: 'wgs84',
+      });
+    },
+    kakaoMapApiCall2: function () {
+      window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
+    },
+    naverMapApiCall: function () {
+      window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
+    },
+  },
+}
+</script>
 
 <style>
 .infowindow-style {
