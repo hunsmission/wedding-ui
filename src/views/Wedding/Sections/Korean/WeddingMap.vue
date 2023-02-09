@@ -11,10 +11,10 @@ const onLoadMap = (map) => {
 </script> -->
 <script setup>
 import { ref } from "vue";
-import {  
+import {
   NaverMap,
   NaverMarker,
-  NaverInfoWindow,  
+  NaverInfoWindow,
 } from "vue3-naver-maps";
 
 const marker = ref();
@@ -33,7 +33,7 @@ const mapOptions = {
   longitude: 126.8989077, // 지도 중앙 경도
   zoom: 16,
   zoomControl: true,
-  zoomControlOptions: { style:"SMALL", position: "TOP_LEFT"},
+  zoomControlOptions: { style: "SMALL", position: "TOP_LEFT" },
 };
 
 const message = '서울시 영등포구 국회대로38길 2길'
@@ -66,8 +66,9 @@ const onError = (e) => {
     <div class="pt-3 pl-3"> <!-- style="border: 1px solid;"> -->
       <h7 class="mb-1" style="color:black">
         <strong>더컨벤션 영등포점 다이너스티 홀</strong>
-        <br>서울시 영등포구 국회대로38길 2길        
-        <button class="pl-1" type="button" v-clipboard:copy="message" v-clipboard:success="onCopy" v-clipboard:error="onError">
+        <br>서울시 영등포구 국회대로38길 2길
+        <button class="pl-1" type="button" v-clipboard:copy="message" v-clipboard:success="onCopy"
+          v-clipboard:error="onError">
           <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
         </button>
         <br>02-6426-5000
@@ -82,11 +83,16 @@ const onError = (e) => {
       <br>
     </div>
     <!-- Navigation Button-->
-    <div>
+    <div class="cantact-parents-container pt-5">
       <ul>
-        
+        <li>버튼</li> 
       </ul>
-
+      <ul>
+        <li>버튼</li>
+      </ul>
+      <ul>
+        <li>버튼</li>
+      </ul>
     </div>
   </section>
 </template>

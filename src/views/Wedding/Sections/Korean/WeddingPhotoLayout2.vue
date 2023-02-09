@@ -148,29 +148,6 @@ export default {
 }
 </script>
 
-<!-- <script lang="ts">
-import { defineComponent } from 'vue'
-import { Pagination, EffectCoverflow } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/effect-coverflow'
-
-export default defineComponent({
-    name: 'swiper-example-3d-coverflow',
-    title: '3D Coverflow effect',    
-    components: {
-        Swiper,
-        SwiperSlide
-    },
-    setup() {
-        return {
-            modules: [Pagination, EffectCoverflow]
-        }
-    },    
-})
-</script> -->
-
 <style lang="scss" scoped>
 @import '@/assets/css/variables.scss';
 @import '@/assets/css/mixins.scss';
