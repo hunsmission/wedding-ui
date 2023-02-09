@@ -90,7 +90,7 @@ const onError = (e) => {
         <li style="margin-bottom: 5px;">
           <img src="../../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;" @click='naverMapApiCall'>
         </li>
-        <li>네이버 내비</li>
+        <li>네이버 지도</li>
       </ul>
     </div>
   </section>
@@ -127,11 +127,8 @@ export default {
         coordType: 'wgs84',
       });
     },
-    kakaoMapApiCall2: function () {
-      window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
-    },
     naverMapApiCall: function () {
-      window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
+      window.open("nmap://place?lat=37.5267957&lng=126.8989077&name=더컨벤션영등포점&appname=WeddingInvitation", "_blank");
     },
   },
 }
