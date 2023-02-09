@@ -74,16 +74,16 @@ const onError = (e) => {
     <!-- Navigation Button-->
     <div class="cantact-parents-container pt-5">
       <ul>
-        <li>버튼</li>
+        <li><img src="../../../../assets/ico/Tmap.png" style="width:33%; height: 33%;"></li>
         <li>Tmap</li>
       </ul>
       <ul>
-        <li>버튼</li>
-        <li>Kakao 네비</li>
+        <li><img src="../../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;"></li>
+        <li>Kakao 내비</li>
       </ul>
       <ul>
-        <li>버튼</li>
-        <li>네이버 네비</li>
+        <li><img src="../../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;"></li>
+        <li>네이버 내비</li>
       </ul>
     </div>
   </section>
