@@ -8,12 +8,12 @@ import IconMessage from "@/components/IconMessage.vue";
     <section class="pt-3 pb-4" id="invite-info">
         <div class="container" style="padding-left: 0px; padding-right: 0px;">
             <div class="row">
-                <div class="col-lg-7 pb-4 text-center mx-auto position-relative"
-                    style="padding-left: 0px; padding-right: 0px; width: 100%;">
+                <!-- Image Card-->
+                <div class="cantact-parents-container pt-5" style="padding-left: 0px; padding-right: 0px;">
                     <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />
                 </div>
-                <div                 
-                    style="
+                <!-- Contact -->
+                <div style="
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -108,7 +108,7 @@ export default {
     name: "weddingPhotoLayout",
     data() {
         return {
-            image: new URL(`../../../../assets/img/content/LovePhoto.PNG`, import.meta.url).href
+            image: new URL(`../../../../assets/img/wedding/wedding-card1.jpg`, import.meta.url).href
         }
     }
 }

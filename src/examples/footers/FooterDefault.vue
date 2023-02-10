@@ -1,5 +1,5 @@
 <script setup>
-import logoDark from "@/assets/img/logo-ct-dark.png";
+import logoDark from "@/assets/img/mickey-minnie.png";
 defineProps({
   brand: {
     type: Object,
@@ -7,7 +7,7 @@ defineProps({
     logo: String,
     route: "",
     default: () => ({
-      name: "Material Kit 2",
+      name: "Mickey & Minnie Wedding",
       logo: logoDark,
       route: "/"
     })
@@ -151,7 +151,7 @@ defineProps({
             </ul>
           </div>
         </div>
-        <div
+        <!-- <div
           class="col-md-2 col-sm-6 col-6 mb-4"
           v-for="{ name, items } of menus"
           :key="name"
@@ -164,17 +164,14 @@ defineProps({
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="col-12">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
-              Material Kit by
-              <a href="https://www.creative-tim.com" target="_blank"
-                >Creative Tim</a
-              >.
+              Wedding Invitation Card by Mickey
             </p>
           </div>
         </div>
