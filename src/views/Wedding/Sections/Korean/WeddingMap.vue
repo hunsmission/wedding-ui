@@ -5,11 +5,10 @@ import {
   NaverMarker,
   NaverInfoWindow,
 } from "vue3-naver-maps";
-// import axios from 'axios';
 
 const marker = ref();
 const infoWindow = ref();
-const isOpen = ref(true); // false: 안보임, true: 보임
+const isOpen = ref(true); // false: unvisible, true: visible
 
 const onLoadMarker = (markerObject) => {
   marker.value = markerObject;
@@ -19,7 +18,7 @@ const onLoadInfoWindow = (infoWindowObject) => {
 };
 
 const mapOptions = {
-  latitude: 37.5267957, // 지도 중앙 위도
+  latitude: 37.5267957,   // 지도 중앙 위도
   longitude: 126.8989077, // 지도 중앙 경도
   zoom: 16,
   zoomControl: true,
@@ -37,7 +36,10 @@ const onError = (e) => {
 
 <template>
   <section class="pt-3 pb-4" id="wedding-map"> <!-- style="background-color: #F2F2F2" -->
-    <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
+    <div class="row">
+            <hr style="border: solid 2px #f881b4; width: 100%">  
+    </div>
+    <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
       Location <br>
       <h7>찾아오시는 길</h7>
     </p>
@@ -110,15 +112,6 @@ export default {
     tmapApiCall: function () {
       window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
     },
-    // tmapApiCall() {            
-    //   axios.get('https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957')
-    //     .then(res => {
-    //       console.log("response data : " + JSON.stringify(res.data));      
-    //     })
-    //     .catch(function (error) {
-    //       console.log(error);
-    //     })
-    // },
     kakaoMapApiCall: function () {        
       window.Kakao.Navi.share({
         name: '더컨벤션영등포점',

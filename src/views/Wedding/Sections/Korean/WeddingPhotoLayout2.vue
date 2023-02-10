@@ -1,6 +1,9 @@
-<template>
-    <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->
-        <p class="lead text-black px-1 mt-3" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
+<template>        
+    <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->  
+        <div class="row">
+            <hr style="border: solid 2px #f881b4; width: 100%">  
+        </div>           
+        <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
             Wedding Gallery <br>
             <h7>성훈 &#10084; 진원 Love Story</h7>
         </p>

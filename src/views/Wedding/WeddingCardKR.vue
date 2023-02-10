@@ -21,6 +21,7 @@ import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
 import WeddingPhotoLayout2 from "./Sections/Korean/WeddingPhotoLayout2.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
+import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
 
 
 import PresentationPages from "./Sections/PresentationPages.vue";
@@ -82,10 +83,11 @@ onUnmounted(() => {
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
-    <WeddingContact />
+    <WeddingContact />    
     <!-- <WeddingPhotoLayout /> -->
     <WeddingPhotoLayout2 />    
     <WeddingMap />
+    <WeddingBankAccount />
 
     <!-- <PresentationInformation /> -->
     <!-- <PresentationExample :data="data" /> -->
