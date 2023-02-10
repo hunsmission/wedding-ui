@@ -12,7 +12,7 @@ import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 //Vue components
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
-import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
+// import WeddingImgGrid from "../../../src/views/Wedding/components/WeddingImgGrid.vue";
 import LanguageNavTab from "./Components/LanguageNavTab.vue";
 
 // sections
@@ -80,99 +80,11 @@ onUnmounted(() => {
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
-    <!-- <div
-      style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #555;
-      "
-    >
-      <ul>
-        <li class="congratulations-contact groom-bride">
-          <div>신랑에게 축하 인사</div>
-          <div>
-            <IconCall width="20" phoneNumber="010-4043-0989"></IconCall>
-          </div>
-          <div>
-            <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
-          </div>
-        </li>
-        <li class="congratulations-contact groom-bride">
-          <div>신부에게 축하 인사</div>
-          <div>
-            <IconCall width="20" phoneNumber="010-0000-0000"></IconCall>
-          </div>
-          <div>
-            <IconMessage width="20" phoneNumber="010-0000-0000"></IconMessage>
-          </div>
-        </li>
-      </ul>
-      <div
-        style="
-          background-color: #555;
-          height: 50px;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          margin-bottom: 20px;
-        "
-      >
-        혼주에게 전화하기
-      </div>
-      <div class="cantact-parents-container">
-        <ul>
-          <li>신랑측 혼주</li>
-          <li class="congratulations-contact parents">
-            <div>아버지 서종호</div>
-            <div>
-              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
-            </div>
-            <div>
-              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
-            </div>
-          </li>
-          <li class="congratulations-contact parents">
-            <div>어머니 임성심</div>
-            <div>
-              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
-            </div>
-            <div>
-              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>신부측 혼주</li>
-          <li class="congratulations-contact parents">
-            <div>아버지 정준영</div>
-            <div>
-              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
-            </div>
-            <div>
-              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
-            </div>
-          </li>
-          <li class="congratulations-contact parents">
-            <div>어머니 천필선</div>
-            <div>
-              <IconCall width="15" phoneNumber="010-0000-0000"></IconCall>
-            </div>
-            <div>
-              <IconMessage width="15" phoneNumber="010-0000-0000"></IconMessage>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div> -->
-
     <WeddingInvitation />
     <WeddingInvitationMessage />
     <WeddingContact />
     <!-- <WeddingPhotoLayout /> -->
-    <WeddingPhotoLayout2 />
+    <WeddingPhotoLayout2 />    
     <WeddingMap />
     <WeddingTest/>
 

@@ -11,12 +11,14 @@
                     stretch: 0,
                     depth: 100,
                     modifier: 1,
-                    slideShadows: true
-                }"                 
+                    slideShadows: true                    
+                }"           
+                :loop="true"      
                 >
                 <swiper-slide class="slide" v-for="item in items" :key="item.title">
-                    <!-- <img :src="`./static/wedding/wedding-${index}.jpg`" /> -->
-                    <v-img :src="item.image" class="grey lighten-2" @click="show"></v-img> <!--:lazy-src="item.image"-->
+                    <img img :src="item.image" @click="show"/> 
+                    <!-- <v-img :src="item.image" :lazy-src="item.image" class="grey lighten-2" style="{width: '100%', height: '100%';}" @click="show"></v-img>  -->
+                    <!--:lazy-src="item.image"-->
                 </swiper-slide>
             </swiper>
         </div>
@@ -165,8 +167,10 @@ export default {
     padding-bottom: 20px;
 
     .slide {
-        width: 200px;
-        height: 300px;
+        // width: 180px;
+        // height: 300px;
+        width: 65%;
+        height: 90%;
 
         img {
             display: block;
