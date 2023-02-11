@@ -26,6 +26,7 @@
     "vue-img-fade": "^0.0.1-alpha.15",
     "vue-loader": "^17.0.1",
     "vue-masonry": "^0.16.0",
+    "vue-meta": "^3.0.0-alpha.10",
     "vue-prism-editor": "2.0.0-alpha.2",
     "vue-router": "4.0.15",
     "vue3-clipboard": "^1.0.0",

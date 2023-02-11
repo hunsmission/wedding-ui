@@ -3,5 +3,7 @@
         <div class="row">
             <hr style="border: solid 2px #f881b4; width: 100%">
         </div>
+
+        
     </section>
 </template>

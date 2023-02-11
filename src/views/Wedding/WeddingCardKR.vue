@@ -22,7 +22,7 @@ import WeddingPhotoLayout2 from "./Sections/Korean/WeddingPhotoLayout2.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
-
+import WeddingCelebrationBoard from "./Sections/Korean/WeddingCelebrationBoard.vue";
 
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";
@@ -32,16 +32,7 @@ import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
 import PresentationInformation from "./Sections/PresentationInformation.vue";
 
 //images
-//import vueMkHeader from "@/assets/img/vue-mk-header.jpg";
 import vueMkHeader from "@/assets/img/wedding/wedding-main2.jpg";
-// import wavesWhite from "@/assets/img/waves-white.svg";
-// import logoBootstrap from "@/assets/img/logos/bootstrap5.jpg";
-// import logoTailwind from "@/assets/img/logos/icon-tailwind.jpg";
-// import logoVue from "@/assets/img/mk-header-6.jpg";
-// import logoAngular from "@/assets/img/logos/angular.jpg";
-// import logoReact from "@/assets/img/logos/react.jpg";
-// import logoSketch from "@/assets/img/logos/sketch.jpg";
-// import WeddingPhotoExample from "../../../src/views/Wedding/Components/WeddingPhotoExample.vue";
 
 //hooks
 const body = document.getElementsByTagName("body")[0];
@@ -66,28 +57,22 @@ onUnmounted(() => {
   </div>
   <Header>
     <div class="col-lg-7 mx-3 position-relative">
-      <h1
-        class="text-left text-black pt-2 mb-n5 me-2"
-        :style="{ display: 'inline-block ' }"
-      >
+      <h1 class="text-left text-black pt-2 mb-n5 me-2" :style="{ display: 'inline-block ' }">
         03.25
       </h1>
     </div>
-    <div
-      class="page-header min-vh-50"
-      :style="`background-image: url(${vueMkHeader})`"
-      loading="lazy"
-    ></div>
+    <div class="page-header min-vh-50" :style="`background-image: url(${vueMkHeader})`" loading="lazy"></div>
   </Header>
 
   <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
-    <WeddingContact />    
+    <WeddingContact />
     <!-- <WeddingPhotoLayout /> -->
-    <WeddingPhotoLayout2 />    
+    <WeddingPhotoLayout2 />
     <WeddingMap />
     <WeddingBankAccount />
+    <WeddingCelebrationBoard />
 
     <!-- <PresentationInformation /> -->
     <!-- <PresentationExample :data="data" /> -->
@@ -98,40 +83,64 @@ onUnmounted(() => {
   <DefaultFooter />
 </template>
 
+<script>
+export default {
+  name: 'Mickey & Minnie Wedding',
+  metaInfo: {
+    meta: [
+      {
+        property: 'og:title',
+        content: '성훈♥진원 결혼 합니다'
+      },
+      {
+        property: 'og:description',
+        content: 'Mickey Love Minnie'
+      },
+      {
+        property: 'og:image',
+        content: '@/assets/img/wedding/wedding-og.jpg' 
+      }
+    ]
+  }
+}
+</script>
+
 <style>
 * {
   margin: 0;
   padding: 0;
 }
+
 ul {
   padding-left: 0 !important;
 }
+
 .congratulations-contact {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.congratulations-contact > div:nth-of-type(2) {
+.congratulations-contact>div:nth-of-type(2) {
   border-right: solid 1px #ddd;
 }
 
-.congratulations-contact.groom-bride > div:nth-of-type(1) {
+.congratulations-contact.groom-bride>div:nth-of-type(1) {
   margin-right: 25px;
 }
 
-.congratulations-contact.groom-bride > div:nth-of-type(2),
-.congratulations-contact.groom-bride > div:nth-of-type(3) {
+.congratulations-contact.groom-bride>div:nth-of-type(2),
+.congratulations-contact.groom-bride>div:nth-of-type(3) {
   padding: 0px 20px;
 }
 
-.congratulations-contact.parents > div:nth-of-type(1) {
+.congratulations-contact.parents>div:nth-of-type(1) {
   font-size: 12px;
   margin-right: 10px;
 }
 
-.congratulations-contact.parents > div:nth-of-type(2),
-.congratulations-contact.parents > div:nth-of-type(3) {
+.congratulations-contact.parents>div:nth-of-type(2),
+.congratulations-contact.parents>div:nth-of-type(3) {
   padding: 0px 5px;
 }
 
@@ -139,11 +148,12 @@ ul {
   display: flex;
   width: 100%;
 }
-.cantact-parents-container > ul {
+
+.cantact-parents-container>ul {
   flex: 1;
 }
 
-.cantact-parents-container > ul > li {
+.cantact-parents-container>ul>li {
   display: flex;
   justify-content: center;
   list-style: none;

@@ -1,7 +1,7 @@
 <template>        
     <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->  
         <div class="row">
-            <hr style="border: solid 2px #f881b4; width: 100%">  
+            <hr style="border: solid 1px #f881b4; width: 100%">  
         </div>           
         <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
             Wedding Gallery <br>
