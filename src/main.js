@@ -35,20 +35,15 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import axios from 'axios' 
 import VueAxios from 'vue-axios'
 
-// vue-meta
-import { createMetaManager } from 'vue-meta'
+// Video js
+import VueVideoPlayer from '@videojs-player/vue'
+import 'video.js/dist/video-js.css'
 
 const vuetify = createVuetify({
     components,
     directives,
 });
 
-const metaManager = createMetaManager({
-  keyName: 'metaInfo',
-  attribute: 'data-vue-meta',
-  ssrAttribute: 'data-vue-meta-server-rendered',
-  tagIDKeyName: 'vmid'
-})
 
 const app = createApp(App);
 
@@ -72,5 +67,5 @@ SwiperClass.use(Pagination, EffectCoverflow);
 app.use(VueAwesomeSwiper);
 app.use(VueAxios, axios);
 app.config.globalProperties.axios = axios; 
-app.use(metaManager);
+app.use(VueVideoPlayer)
 app.mount("#app");

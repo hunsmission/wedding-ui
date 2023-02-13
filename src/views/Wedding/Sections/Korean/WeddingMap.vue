@@ -37,11 +37,11 @@ const onError = (e) => {
 <template>
   <section class="pt-3 pb-4" id="wedding-map" > <!-- style="background-color: #F2F2F2" -->
     <div class="row">
-            <hr style="border: solid 1px #f881b4; width: 100%">  
+            <hr style="border: solid 3px #f881b4; width: 100%">  
     </div>
     <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
       Location <br>
-      <h7>찾아오시는 길</h7>
+      <h6 style="color:black">찾아오시는 길</h6>
     </p>
     <!-- Map -->
     <div class="pt-4">

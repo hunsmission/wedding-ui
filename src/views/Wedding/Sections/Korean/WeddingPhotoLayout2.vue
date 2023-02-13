@@ -1,11 +1,11 @@
 <template>        
     <section class="pt-3 pb-4" id="wedding-photo-grid2"> <!-- style="background-color: #F2F2F2" -->  
         <div class="row">
-            <hr style="border: solid 1px #f881b4; width: 100%">  
+            <hr style="border: solid 3px #f881b4; width: 100%">  
         </div>           
         <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
-            Wedding Gallery <br>
-            <h7>성훈 &#10084; 진원 Love Story</h7>
+            [성훈 &#10084; 진원] Wedding Gallery <br>
+            <!-- <h6 style="color:black">성훈 &#10084; 진원 Love Story</h6> -->
         </p>
         <div class="wedding-photo" v-viewer="viewerOptions">
             <swiper class="swiper" :modules="modules" :pagination="true" :effect="'coverflow'" :grab-cursor="true"

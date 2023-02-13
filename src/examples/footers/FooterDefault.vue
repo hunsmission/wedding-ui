@@ -151,27 +151,13 @@ defineProps({
             </ul>
           </div>
         </div>
-        <!-- <div
-          class="col-md-2 col-sm-6 col-6 mb-4"
-          v-for="{ name, items } of menus"
-          :key="name"
-        >
-          <h6 class="text-sm">{{ name }}</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item" v-for="item of items" :key="item.name">
-              <a class="nav-link" :href="item.href" target="_blank">
-                {{ item.name }}
-              </a>
-            </li>
-          </ul>
-        </div> -->
 
         <div class="col-12">
           <div class="text-center">
             <p class="text-dark my-4 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
-              Wedding Invitation Card by Mickey
+              <br>Wedding Invitation Card by Mickey
             </p>
           </div>
         </div>

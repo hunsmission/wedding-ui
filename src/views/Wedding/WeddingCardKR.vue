@@ -1,13 +1,13 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
-import IconCall from "../../components/IconCall.vue";
-import IconMessage from "../../components/IconMessage.vue";
+// import IconCall from "../../components/IconCall.vue";
+// import IconMessage from "../../components/IconMessage.vue";
 
 //example components
 import NavbarDefault from "../../examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
-import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
+// import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
 //Vue components
 import MaterialButton from "@/components/MaterialButton.vue";
@@ -19,6 +19,7 @@ import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
 import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
 import WeddingPhotoLayout2 from "./Sections/Korean/WeddingPhotoLayout2.vue";
+import WeddingVideo from "./Sections/Korean/WeddingVideo.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
@@ -70,15 +71,10 @@ onUnmounted(() => {
     <WeddingContact />
     <!-- <WeddingPhotoLayout /> -->
     <WeddingPhotoLayout2 />
+    <WeddingVideo />
     <WeddingMap />
     <WeddingBankAccount />
     <WeddingCelebrationBoard />
-
-    <!-- <PresentationInformation /> -->
-    <!-- <PresentationExample :data="data" /> -->
-    <!-- <PresentationPages /> -->
-    <!-- <BuiltByDevelopers /> -->
-
   </div>
   <DefaultFooter />
 </template>

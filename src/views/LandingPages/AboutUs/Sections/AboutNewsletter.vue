@@ -20,7 +20,7 @@ onMounted(() => {
             Your company may not be in the software business, but eventually, a
             software company will be in your business.
           </p>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-8">
               <MaterialInput
                 class="input-group-outline"
@@ -37,7 +37,7 @@ onMounted(() => {
                 >Subscribe</MaterialButton
               >
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-md-5 ms-auto mt-6 md-mt-0">
           <div class="position-relative">

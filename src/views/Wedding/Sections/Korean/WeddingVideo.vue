@@ -1,0 +1,21 @@
+<script setup>
+import { ref } from "vue";
+</script>
+
+<template>
+    <section class="pt-3 pb-4" id="wedding-video"> <!-- style="background-color: #F2F2F2" -->
+        <div class="row">
+            <hr style="border: solid 3px #f881b4; width: 100%">
+        </div>
+        <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
+            [성훈 &#10084; 진원] Promise Video <br>
+        </p>
+        <div class="pt-3">
+            <video controls width="100%" poster="../../../../assets/video/video-poster.PNG" >
+                <source src="../../../../assets/video/wedding-video.mp4"  type="video/mp4" />
+            </video>
+            <!-- <video-player src="../../../../assets/video/wedding-video.mp4" type="video/mp4"  controls :loop="false" 
+                :volume="0.6" /> -->
+        </div>
+    </section>
+</template>>
