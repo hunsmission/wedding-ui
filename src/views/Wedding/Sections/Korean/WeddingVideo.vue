@@ -11,7 +11,7 @@ import { ref } from "vue";
             [성훈 &#10084; 진원] Promise Video <br>
         </p>
         <div class="pt-3">
-            <video controls width="100%" poster="../../../../assets/video/video-poster.PNG" >
+            <video controls width="100%" poster="../../../../assets/video/video-poster.png" >
                 <source src="../../../../assets/video/wedding-video.mp4"  type="video/mp4" />
             </video>
             <!-- <video-player src="../../../../assets/video/wedding-video.mp4" type="video/mp4"  controls :loop="false" 
