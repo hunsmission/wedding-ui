@@ -22,7 +22,7 @@ onMounted(() => {
             <div class="col-lg-7 mx-auto d-flex justify-content-center flex-column">
                 <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
                     Congratulatory Messages <br>
-                <h6 style="color:black">신랑·신부에게 축하 메시지를 남겨주세요</h6>
+                <h6 style="color:black">신랑 & 신부에게 축하 메시지를 남겨주세요</h6>
                 </p>
                 <div class="card-body pt-1" style="padding-left: 0px; padding-right: 0px;">
                     <form role="form" class="text-start">
