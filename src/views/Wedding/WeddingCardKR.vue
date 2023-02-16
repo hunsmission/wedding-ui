@@ -23,6 +23,7 @@ import WeddingVideo from "./Sections/Korean/WeddingVideo.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
+import WeddingBankAccount2 from "./Sections/Korean/WeddingBankAccount2.vue";
 import WeddingCelebrationBoard from "./Sections/Korean/WeddingCelebrationBoard.vue";
 
 import PresentationPages from "./Sections/PresentationPages.vue";
@@ -65,7 +66,8 @@ onUnmounted(() => {
     <div class="page-header min-vh-50" :style="`background-image: url(${vueMkHeader})`" loading="lazy"></div>
   </Header>
 
-  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+  <!-- <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6"> -->
+  <div class="card card-body shadow-blur  mx-3 mx-md-4 mt-n6">
     <WeddingInvitation />
     <WeddingInvitationMessage />
     <WeddingContact />
@@ -74,8 +76,10 @@ onUnmounted(() => {
     <WeddingVideo />
     <WeddingMap />
     <WeddingBankAccount />
+    <!-- <WeddingBankAccount2 /> -->
     <WeddingCelebrationBoard />
   </div>
+
   <DefaultFooter />
 </template>
 
