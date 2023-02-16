@@ -23,7 +23,6 @@ import WeddingVideo from "./Sections/Korean/WeddingVideo.vue";
 import WeddingContact from "./Sections/Korean/WeddingContact.vue";
 import WeddingMap from "./Sections/Korean/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
-import WeddingBankAccount2 from "./Sections/Korean/WeddingBankAccount2.vue";
 import WeddingCelebrationBoard from "./Sections/Korean/WeddingCelebrationBoard.vue";
 
 import PresentationPages from "./Sections/PresentationPages.vue";
@@ -52,7 +51,7 @@ onUnmounted(() => {
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <NavbarDefault :sticky="false" />
+        <!-- <NavbarDefault :sticky="false" /> -->
         <!-- <LanguageNavTab /> -->
       </div>
     </div>
@@ -85,7 +84,7 @@ onUnmounted(() => {
 
 <script>
 export default {
-  name: 'Mickey & Minnie Wedding',
+  name: 'Mickey & Minnie Wedding Invitation Card',
   metaInfo: {
     meta: [
       {

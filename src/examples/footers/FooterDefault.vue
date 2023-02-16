@@ -7,7 +7,7 @@ defineProps({
     logo: String,
     route: "",
     default: () => ({
-      name: "Mickey & Minnie Wedding",
+      name: "Mickey & Minnie Wedding Invitation Card",
       logo: logoDark,
       route: "/"
     })
@@ -131,9 +131,10 @@ defineProps({
             <a :href="brand.route">
               <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
             </a>
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
+            <h6 class="font-weight-bolder mb-1">{{ brand.name }}</h6>
+            <small>Developed By Mickey</small>
           </div>
-          <div>
+          <!-- <div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li
                 class="nav-item"
@@ -149,12 +150,12 @@ defineProps({
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <div class="col-12">
           <div class="text-center">
-            <p class="text-dark my-4 text-sm font-weight-normal">
+            <p class="text-dark my-1 text-sm font-weight-normal">
               All rights reserved. Copyright ©
               {{ new Date().getFullYear() }}
               <br>Wedding Invitation Card by Mickey
