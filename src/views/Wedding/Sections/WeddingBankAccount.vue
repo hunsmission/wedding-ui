@@ -59,7 +59,7 @@ const onError = (e) => {
                                 <small>기업은행 536-023834-01-018</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyAccount"
                                     v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
+                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
                                 </button>
                             </p>
                             <p style="color: black">
@@ -69,7 +69,7 @@ const onError = (e) => {
                                 <small>국민은행 469302-01-103044</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyFatherAccount"
                                     v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
+                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
                                 </button>
                             </p>
                             <p style="color: black">
@@ -79,7 +79,7 @@ const onError = (e) => {
                                 <small>신한은행 110-517-162913</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyMotherAccount"
                                     v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
+                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
                                 </button>
                             </p>
                         </div>
@@ -112,7 +112,7 @@ const onError = (e) => {
                                 <small>우리은행 1002-246-198716</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="minnieAccount"
                                     v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
+                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
                                 </button>
                             </p>
                         </div>

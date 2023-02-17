@@ -15,15 +15,15 @@ import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import LanguageNavTab from "./Components/LanguageNavTab.vue";
 
 // sections
-import WeddingInvitation from "./Sections/Korean/WeddingInvitation.vue";
-import WeddingInvitationMessage from "./Sections/Korean/WeddingInvitationMessage.vue";
-import WeddingPhotoLayout from "./Sections/Korean/WeddingPhotoLayout.vue";
-import WeddingPhotoLayout2 from "./Sections/Korean/WeddingPhotoLayout2.vue";
-import WeddingVideo from "./Sections/Korean/WeddingVideo.vue";
-import WeddingContact from "./Sections/Korean/WeddingContact.vue";
-import WeddingMap from "./Sections/Korean/WeddingMap.vue";
-import WeddingBankAccount from "./Sections/Korean/WeddingBankAccount.vue";
-import WeddingCelebrationBoard from "./Sections/Korean/WeddingCelebrationBoard.vue";
+import WeddingInvitation from "./Sections/WeddingInvitation.vue";
+import WeddingInvitationMessage from "./Sections/WeddingInvitationMessage.vue";
+import WeddingPhotoLayout from "./Sections/WeddingPhotoLayout.vue";
+import WeddingPhotoLayout2 from "./Sections/WeddingPhotoLayout2.vue";
+import WeddingVideo from "./Sections/WeddingVideo.vue";
+import WeddingContact from "./Sections/WeddingContact.vue";
+import WeddingMap from "./Sections/WeddingMap.vue";
+import WeddingBankAccount from "./Sections/WeddingBankAccount.vue";
+import WeddingCelebrationBoard from "./Sections/WeddingCelebrationBoard.vue";
 
 import PresentationPages from "./Sections/PresentationPages.vue";
 import PresentationExample from "./Sections/PresentationExample.vue";

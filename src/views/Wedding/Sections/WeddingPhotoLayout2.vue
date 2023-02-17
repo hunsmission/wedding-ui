@@ -20,8 +20,6 @@
                 >
                 <swiper-slide class="slide" v-for="item in items" :key="item.title">
                     <img img :src="item.image" @click="show"/> 
-                    <!-- <v-img :src="item.image" :lazy-src="item.image" class="grey lighten-2" style="{width: '100%', height: '100%';}" @click="show"></v-img>  -->
-                    <!--:lazy-src="item.image"-->
                 </swiper-slide>
             </swiper>
         </div>
@@ -68,77 +66,77 @@ export default {
                 {
                     title: 'Wedding Photo 1',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 2',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 3',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 4',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 5',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 7',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-7.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-7.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 8',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-8.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-8.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 9',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-9.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-9.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 10',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-10.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-10.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 11',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-11.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-11.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 12',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-12.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-12.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 13',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-13.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-13.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 14',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-14.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-14.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 15',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-15.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-15.jpg`, import.meta.url).href
                 },
                 {
                     title: 'Wedding Photo 6',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
                 },
             ],
         }

@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import WeddingCardKR from "../views/Wedding/WeddingCardKR.vue";
-import WeddingCardEN from "../views/Wedding/WeddingCardEN.vue";
+import WeddingCard from "../views/Wedding/WeddingCard.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
@@ -30,17 +29,12 @@ const router = createRouter({
     {
       path: "/",
       name: "presentation",
-      component: WeddingCardKR,
+      component: WeddingCard,
     },
     {
-      path: "/mickey/kr",
-      name: "koreanMain",
-      component : WeddingCardKR,
-    },
-    {
-      path: "/mickey/en",
-      name: "englishMain",
-      component : WeddingCardEN,
+      path: "/mickey",
+      name: "main",
+      component : WeddingCard,
     },
     {
       path: "/pages/landing-pages/about-us",

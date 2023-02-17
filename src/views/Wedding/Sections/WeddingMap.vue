@@ -61,7 +61,7 @@ const onError = (e) => {
         <br>서울시 영등포구 국회대로38길 2길
         <button class="pl-1" type="button" v-clipboard:copy="message" v-clipboard:success="onCopy"
           v-clipboard:error="onError">
-          <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
+          <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
         </button>
         <br>02-6426-5000
       </h7>
@@ -78,19 +78,19 @@ const onError = (e) => {
     <div class="cantact-parents-container pt-5">
       <ul>
         <li style="margin-bottom: 5px;">
-          <img src="../../../../assets/ico/Tmap.png" style="width:33%; height: 33%;" @click='tmapApiCall'>
+          <img src="../../../assets/ico/Tmap.png" style="width:33%; height: 33%;" @click='tmapApiCall'>
         </li>
         <li>Tmap</li>
       </ul>
       <ul>
         <li style="margin-bottom: 5px;">
-          <img src="../../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;" @click='kakaoMapApiCall'>
+          <img src="../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;" @click='kakaoMapApiCall'>
         </li>
         <li>Kakao 내비</li>
       </ul>
       <ul>
         <li style="margin-bottom: 5px;">
-          <img src="../../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;" @click='naverMapApiCall'>
+          <img src="../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;" @click='naverMapApiCall'>
         </li>
         <li>네이버 지도</li>
       </ul>

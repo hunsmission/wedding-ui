@@ -4,7 +4,6 @@ import { onMounted } from "vue";
 import MaterialInput from "@/components/MaterialInput.vue";
 import MaterialTextArea from "@/components/MaterialTextArea.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
-import MaterialSwitch from "@/components/MaterialSwitch.vue";
 
 // material-input
 import setMaterialInput from "@/assets/js/material-input";
@@ -49,14 +48,14 @@ onMounted(() => {
                 <!-- Messages Example Start-->
                 <div>
                     <div style="vertical-align: middle;">
-                        <h6 >
+                        <h6>
                             미키미키 <small>&nbsp&nbsp&nbsp2023.02.14 13:13:44</small>&nbsp&nbsp&nbsp&nbsp
                             <MaterialButton class="pt-1" variant="gradient" color="light" size="sm" sclass="me-2"
-                                style="width: 15%; padding-left: 10px; padding-right: 10px; font-size: 10px; margin-bottom: 0; ">수정</MaterialButton>
+                                style="width: 15%; padding-left: 10px; padding-right: 10px; font-size: 10px; margin-bottom: 0; ">
+                                수정</MaterialButton>
                         </h6>
                     </div>
-                    <p class="lead text-black px-1"
-                        :style="{ fontWeight: '400', fontSize: '80%', marginBottom: '1px' }">
+                    <p class="lead text-black px-1" :style="{ fontWeight: '400', fontSize: '80%', marginBottom: '1px' }">
                         추카추카링~~
                     </p>
                     <hr style="border: solid 1px #bcbcbc; width: 100%">

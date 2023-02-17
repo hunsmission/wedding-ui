@@ -1,5 +1,4 @@
 <script setup>
-import DefaultCounterCard from "../../../../examples/cards/counterCards/DefaultCounterCard.vue";
 import IconCall from "@/components/IconCall.vue";
 import IconMessage from "@/components/IconMessage.vue";
 </script>
@@ -10,7 +9,7 @@ import IconMessage from "@/components/IconMessage.vue";
             <div class="row">
                 <!-- Image Card-->
                 <div class="cantact-parents-container pt-5" style="padding-left: 0px; padding-right: 0px;">
-                    <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />
+                    <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />                    
                 </div>
                 <!-- Contact -->
                 <div style="
@@ -108,7 +107,7 @@ export default {
     name: "weddingPhotoLayout",
     data() {
         return {
-            image: new URL(`../../../../assets/img/wedding/wedding-card1.jpg`, import.meta.url).href
+            image: new URL(`../../../assets/img/wedding/wedding-card1.jpg`, import.meta.url).href            
         }
     }
 }
