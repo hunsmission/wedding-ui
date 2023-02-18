@@ -53,32 +53,32 @@ export default {
         {
           title: 'Wedding Photo 1',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-1.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 2',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-2.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 3',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-3.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 4',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-4.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 5',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
         },
         {
           title: 'Wedding Photo 6',
           content: 'Mickey Love Minnie',
-          image: new URL(`../../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
+          image: new URL(`../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
         },
       ]
     }

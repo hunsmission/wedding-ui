@@ -21,7 +21,7 @@ onMounted(() => {
             <div class="col-lg-7 mx-auto d-flex justify-content-center flex-column">
                 <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
                     Congratulatory Messages <br>
-                <h6 style="color:black">신랑 & 신부에게 축하 메시지를 남겨주세요</h6>
+                <h6 style="color:black">{{ $t('boardTitle')}}</h6>
                 </p>
                 <div class="card-body pt-1" style="padding-left: 0px; padding-right: 0px;">
                     <form role="form" class="text-start">
@@ -40,7 +40,7 @@ onMounted(() => {
                         </MaterialTextArea>
                         <div class="text-center">
                             <MaterialButton class="my-4 mb-2" variant="gradient"
-                                style="background-color: #e7b6cc; color: white" fullWidth>등록하기
+                                style="background-color: #e7b6cc; color: white" fullWidth>{{ $t('register')}}
                             </MaterialButton>
                         </div>
                     </form>
@@ -52,7 +52,7 @@ onMounted(() => {
                             미키미키 <small>&nbsp&nbsp&nbsp2023.02.14 13:13:44</small>&nbsp&nbsp&nbsp&nbsp
                             <MaterialButton class="pt-1" variant="gradient" color="light" size="sm" sclass="me-2"
                                 style="width: 15%; padding-left: 10px; padding-right: 10px; font-size: 10px; margin-bottom: 0; ">
-                                수정</MaterialButton>
+                                {{ $t('modify')}}</MaterialButton>
                         </h6>
                     </div>
                     <p class="lead text-black px-1" :style="{ fontWeight: '400', fontSize: '80%', marginBottom: '1px' }">

@@ -9,20 +9,20 @@ import IconMessage from "@/components/IconMessage.vue";
             <div class="row">
                 <!-- Image Card-->
                 <div class="cantact-parents-container pt-5" style="padding-left: 0px; padding-right: 0px;">
-                    <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />                    
+                    <img :src=image style="padding-left: 0px; padding-right: 0px; width: 100%; height: 85%;" />
                 </div>
                 <!-- Contact -->
                 <div style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        color: #555;
-                        padding-left: 0px;
-                        padding-right: 0px;
-                ">
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                color: #555;
+                                padding-left: 0px;
+                                padding-right: 0px;
+                        ">
                     <ul>
                         <li class="congratulations-contact groom-bride">
-                            <div>신랑에게 축하 인사</div>
+                            <div>{{ $t('contactMickey') }}</div>
                             <div>
                                 <IconCall width="20" phoneNumber="010-2827-6829"></IconCall>
                             </div>
@@ -31,7 +31,7 @@ import IconMessage from "@/components/IconMessage.vue";
                             </div>
                         </li>
                         <li class="congratulations-contact groom-bride">
-                            <div>신부에게 축하 인사</div>
+                            <div>{{ $t('contactMinnie') }}</div>
                             <div>
                                 <IconCall width="20" phoneNumber="010-7376-0560"></IconCall>
                             </div>
@@ -41,22 +41,22 @@ import IconMessage from "@/components/IconMessage.vue";
                         </li>
                     </ul>
                     <div style="
-          background-color: #555;
-          height: 50px;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          margin-bottom: 20px;
-        ">
-                        혼주에게 전화하기
+                  background-color: #555;
+                  height: 50px;
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  margin-bottom: 20px;
+                ">
+                        {{ $t('contactParents') }}
                     </div>
                     <div class="cantact-parents-container">
                         <ul>
-                            <li>신랑측 혼주</li>
+                            <li>{{ $t('contactMickeyParentsTitle') }}</li>
                             <li class="congratulations-contact parents">
-                                <div>아버지 박기수</div>
+                                <div>{{ $t('contactMickeyFather') }}</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-9070-6829"></IconCall>
                                 </div>
@@ -65,7 +65,7 @@ import IconMessage from "@/components/IconMessage.vue";
                                 </div>
                             </li>
                             <li class="congratulations-contact parents">
-                                <div>어머니 백명옥</div>
+                                <div>{{ $t('contactMickeyMother') }}</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-7112-6829"></IconCall>
                                 </div>
@@ -75,9 +75,9 @@ import IconMessage from "@/components/IconMessage.vue";
                             </li>
                         </ul>
                         <ul>
-                            <li>신부측 혼주</li>
+                            <li>{{ $t('contactMinnieParentsTitle') }}</li>
                             <li class="congratulations-contact parents">
-                                <div>아버지 나병선</div>
+                                <div>{{ $t('contactMinnieFather') }}</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-4330-3936"></IconCall>
                                 </div>
@@ -86,7 +86,7 @@ import IconMessage from "@/components/IconMessage.vue";
                                 </div>
                             </li>
                             <li class="congratulations-contact parents">
-                                <div>어머니 김미주</div>
+                                <div>{{ $t('contactMinnieMother') }}</div>
                                 <div>
                                     <IconCall width="15" phoneNumber="010-9500-0450"></IconCall>
                                 </div>
@@ -107,7 +107,7 @@ export default {
     name: "weddingPhotoLayout",
     data() {
         return {
-            image: new URL(`../../../assets/img/wedding/wedding-card1.jpg`, import.meta.url).href            
+            image: new URL(`../../../assets/img/wedding/wedding-card1.jpg`, import.meta.url).href
         }
     }
 }

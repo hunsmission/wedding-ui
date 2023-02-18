@@ -22,7 +22,7 @@ const onError = (e) => {
         <div class="row">
             <div class="col-md-6 m-auto" style="text-align: center;">
                 <h6 style="margin-bottom: 0;">
-                    신랑 & 신부에게 마음 전하기<br>
+                    {{ $t('accountTitle')}}<br>
                 </h6>
                 <p>
                     <small>Thank you</small>
@@ -30,12 +30,12 @@ const onError = (e) => {
             </div>
             <div class="text-center">
                 <MaterialButton class="my-4 mb-2" variant="gradient" style="background-color: #e7b6cc; color: white"
-                    fullWidth data-bs-toggle="modal" data-bs-target="#mickeyAccountModal">신랑측 계좌번호
+                    fullWidth data-bs-toggle="modal" data-bs-target="#mickeyAccountModal">{{ $t('accountMickey')}}
                 </MaterialButton>
             </div>
             <div class="text-center">
                 <MaterialButton class="my-4 mb-2" variant="gradient" style="background-color: #e7b6cc; color: white"
-                    fullWidth data-bs-toggle="modal" data-bs-target="#minnieAccountModal">신부측 계좌번호
+                    fullWidth data-bs-toggle="modal" data-bs-target="#minnieAccountModal">{{ $t('accountMinnie')}}
                 </MaterialButton>
             </div>
 
@@ -46,7 +46,7 @@ const onError = (e) => {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h6 class="modal-title" id="mickeyAccountModalLabel">
-                                신랑측 계좌번호
+                                {{ $t('accountMickey')}}
                             </h6>
                             <MaterialButton color="none" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </MaterialButton>
@@ -54,7 +54,7 @@ const onError = (e) => {
                         <div class="modal-body">
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">[신랑 박성훈]</strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo1')}}</strong><br>
                                 </small>
                                 <small>기업은행 536-023834-01-018</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyAccount"
@@ -64,7 +64,7 @@ const onError = (e) => {
                             </p>
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">[혼주 박기수]</strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo2')}}</strong><br>
                                 </small>
                                 <small>국민은행 469302-01-103044</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyFatherAccount"
@@ -74,7 +74,7 @@ const onError = (e) => {
                             </p>
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">[혼주 백명옥] </strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo3')}}</strong><br>
                                 </small>
                                 <small>신한은행 110-517-162913</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyMotherAccount"
@@ -99,7 +99,7 @@ const onError = (e) => {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h6 class="modal-title" id="minnieAccountModalLabel">
-                                신부측 계좌번호
+                                {{ $t('accountMinnie')}}
                             </h6>
                             <MaterialButton color="none" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </MaterialButton>
@@ -107,7 +107,7 @@ const onError = (e) => {
                         <div class="modal-body">
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">[신부 나진원] 가족통장  </strong><br>
+                                    <strong style="color: black;">{{ $t('accountMinnieInfo1')}}  </strong><br>
                                 </small>
                                 <small>우리은행 1002-246-198716</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="minnieAccount"
@@ -124,23 +124,6 @@ const onError = (e) => {
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="col-md-6 m-auto mt-1" style="text-align: center;">
-                <p style="color: black">
-                    <small>기업은행 536-023834-01-018 (예금주: 박성훈)</small>&nbsp&nbsp
-                    <button class="pl-1" type="button" v-clipboard:copy="mickeyAccount" v-clipboard:success="onCopy"
-                        v-clipboard:error="onError">
-                        <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
-                    </button>
-                </p>
-                <p style="color: black">
-                    <small>국민은행 276701-04-260910 (예금주: 나진원)</small>&nbsp&nbsp
-                    <button class="pl-1" type="button" v-clipboard:copy="minnieAccount" v-clipboard:success="onCopy"
-                        v-clipboard:error="onError">
-                        <img src="../../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
-                    </button>
-                </p>
-            </div> -->
         </div>
 
     </section>

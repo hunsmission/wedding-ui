@@ -32,17 +32,32 @@ import SwiperClass, { Pagination, EffectCoverflow } from 'swiper'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 // Axios
-import axios from 'axios' 
+import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 // Video js
 import VueVideoPlayer from '@videojs-player/vue'
 import 'video.js/dist/video-js.css'
 
+// i18n
+import { createI18n } from 'vue-i18n'
+import i18n_ko from '@/assets/i18n/ko.json'
+import i18n_en from '@/assets/i18n/en.json'
+
 const vuetify = createVuetify({
-    components,
-    directives,
+  components,
+  directives,
 });
+
+const messages = {
+  ko: i18n_ko,
+  en: i18n_en
+}
+
+const i18n = createI18n({
+  locale: 'ko',
+  messages
+})
 
 
 const app = createApp(App);
@@ -60,12 +75,13 @@ app
     subModules: [],  // Optional, "panorama" | "geocoder" | "drawing" | "visualization"
   })
 app.use(VueClipboard, {
-    autoSetContainer: true,
-    appendToBody: true,
-  })
+  autoSetContainer: true,
+  appendToBody: true,
+})
 SwiperClass.use(Pagination, EffectCoverflow);
 app.use(VueAwesomeSwiper);
 app.use(VueAxios, axios);
-app.config.globalProperties.axios = axios; 
+app.config.globalProperties.axios = axios;
 app.use(VueVideoPlayer)
+app.use(i18n);
 app.mount("#app");

@@ -10,6 +10,7 @@ import Header from "../../examples/Header.vue";
 // import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
 
 //Vue components
+import LagguageNavbar from "./Components/LanguageNavbar.vue";
 import MaterialButton from "@/components/MaterialButton.vue";
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
 import LanguageNavTab from "./Components/LanguageNavTab.vue";
@@ -51,6 +52,7 @@ onUnmounted(() => {
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
+        <LagguageNavbar />        
         <!-- <NavbarDefault :sticky="false" /> -->
         <!-- <LanguageNavTab /> -->
       </div>

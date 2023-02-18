@@ -4,7 +4,7 @@
             <hr style="border: solid 3px #f881b4; width: 100%">  
         </div>           
         <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
-            [성훈 &#10084; 진원] Wedding Gallery <br>
+            [{{ $t('mickeyName') }} &#10084; {{ $t('minnieName') }}] Wedding Gallery <br>
             <!-- <h6 style="color:black">성훈 &#10084; 진원 Love Story</h6> -->
         </p>
         <div class="wedding-photo" v-viewer="viewerOptions">
