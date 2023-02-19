@@ -28,10 +28,22 @@ const mapOptions = {
 const message = '서울시 영등포구 국회대로38길 2길';
 // const message = ({$t('address')})
 const onCopy = (e) => {
-  alert('Copy address successfully : ' + e.text)
+  $toast.open({
+                message: 'Copied to clipboard : ' + e.text,
+                type: 'default',
+                position: 'bottom',
+                duration: 1500,
+                queue: true               
+    });
 };
 const onError = (e) => {
-  alert('Failed to copy texts')
+  $toast.open({
+                message: 'Failed Copied to clipboard : ',
+                type: 'error',
+                position: 'bottom',
+                duration: 1500,
+                queue: true               
+    });
 };
 </script>
 

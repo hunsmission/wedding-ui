@@ -78,7 +78,7 @@ onUnmounted(() => {
     <WeddingMap />
     <WeddingBankAccount />
     <!-- <WeddingBankAccount2 /> -->
-    <WeddingCelebrationBoard />
+    <!-- <WeddingCelebrationBoard /> -->
   </div>
 
   <DefaultFooter />

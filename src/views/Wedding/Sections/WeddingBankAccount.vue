@@ -6,11 +6,23 @@ const mickeyAccount = '53602383401018';
 const mickeyFatherAccount = '46930201103044';
 const mickeyMotherAccount = '110517162913';
 const minnieAccount = '1002-246-198716'
-const onCopy = (e) => {
-    alert('Copy address successfully : ' + e.text)
+const onCopy = (e) => {    
+    $toast.open({
+                message: 'Copied to clipboard : ' + e.text,
+                type: 'default',
+                position: 'bottom',
+                duration: 1500,
+                queue: true               
+    });
 };
 const onError = (e) => {
-    alert('Failed to copy texts')
+    $toast.open({
+                message: 'Failed Copied to clipboard : ',
+                type: 'error',
+                position: 'bottom',
+                duration: 1500,
+                queue: true               
+    });
 };
 </script>
 
@@ -22,7 +34,7 @@ const onError = (e) => {
         <div class="row">
             <div class="col-md-6 m-auto" style="text-align: center;">
                 <h6 style="margin-bottom: 0;">
-                    {{ $t('accountTitle')}}<br>
+                    {{ $t('accountTitle') }}<br>
                 </h6>
                 <p>
                     <small>Thank you</small>
@@ -30,12 +42,12 @@ const onError = (e) => {
             </div>
             <div class="text-center">
                 <MaterialButton class="my-4 mb-2" variant="gradient" style="background-color: #e7b6cc; color: white"
-                    fullWidth data-bs-toggle="modal" data-bs-target="#mickeyAccountModal">{{ $t('accountMickey')}}
+                    fullWidth data-bs-toggle="modal" data-bs-target="#mickeyAccountModal">{{ $t('accountMickey') }}
                 </MaterialButton>
             </div>
             <div class="text-center">
                 <MaterialButton class="my-4 mb-2" variant="gradient" style="background-color: #e7b6cc; color: white"
-                    fullWidth data-bs-toggle="modal" data-bs-target="#minnieAccountModal">{{ $t('accountMinnie')}}
+                    fullWidth data-bs-toggle="modal" data-bs-target="#minnieAccountModal">{{ $t('accountMinnie') }}
                 </MaterialButton>
             </div>
 
@@ -46,7 +58,7 @@ const onError = (e) => {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h6 class="modal-title" id="mickeyAccountModalLabel">
-                                {{ $t('accountMickey')}}
+                                {{ $t('accountMickey') }}
                             </h6>
                             <MaterialButton color="none" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </MaterialButton>
@@ -54,7 +66,7 @@ const onError = (e) => {
                         <div class="modal-body">
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMickeyInfo1')}}</strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo1') }}</strong><br>
                                 </small>
                                 <small>기업은행 536-023834-01-018</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyAccount"
@@ -64,7 +76,7 @@ const onError = (e) => {
                             </p>
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMickeyInfo2')}}</strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo2') }}</strong><br>
                                 </small>
                                 <small>국민은행 469302-01-103044</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyFatherAccount"
@@ -74,7 +86,7 @@ const onError = (e) => {
                             </p>
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMickeyInfo3')}}</strong><br>
+                                    <strong style="color: black;">{{ $t('accountMickeyInfo3') }}</strong><br>
                                 </small>
                                 <small>신한은행 110-517-162913</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="mickeyMotherAccount"
@@ -99,7 +111,7 @@ const onError = (e) => {
                     <div class="modal-content">
                         <div class="modal-header">
                             <h6 class="modal-title" id="minnieAccountModalLabel">
-                                {{ $t('accountMinnie')}}
+                                {{ $t('accountMinnie') }}
                             </h6>
                             <MaterialButton color="none" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                             </MaterialButton>
@@ -107,7 +119,7 @@ const onError = (e) => {
                         <div class="modal-body">
                             <p style="color: black">
                                 <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMinnieInfo1')}}  </strong><br>
+                                    <strong style="color: black;">{{ $t('accountMinnieInfo1') }} </strong><br>
                                 </small>
                                 <small>우리은행 1002-246-198716</small>&nbsp
                                 <button class="pl-1" type="button" v-clipboard:copy="minnieAccount"
@@ -125,9 +137,46 @@ const onError = (e) => {
                 </div>
             </div>
         </div>
-
     </section>
 </template>
+
+<script>
+import { useToast } from 'vue-toast-notification';
+const $toast = useToast();
+
+export default {
+    data() {
+        return {
+            form: {
+                message: 'This is a sample message',
+                type: 'success',
+                duration: 10000,
+                dismissible: true,
+                queue: false,
+                position: 'bottom-right',
+                onClick: this.onClick,
+                onDismiss: this.onDismiss,
+            },
+            types: [
+                'success',
+                'error',
+                'warning',
+                'info',
+                'default',
+            ]
+        }
+    },
+    methods: {
+        executeToast() {
+            $toast.open({
+                message: 'Something went wrong!',
+                type: 'error',
+                // all of other options may go here
+            });
+        },
+    },
+}
+</script>
 
 <style>
 /* modal position(center)*/

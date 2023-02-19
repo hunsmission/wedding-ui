@@ -44,6 +44,11 @@ import { createI18n } from 'vue-i18n'
 import i18n_ko from '@/assets/i18n/ko.json'
 import i18n_en from '@/assets/i18n/en.json'
 
+// toast
+import ToastPlugin from 'vue-toast-notification';
+// import 'vue-toast-notification/dist/theme-default.css';
+import 'vue-toast-notification/dist/theme-sugar.css';
+
 const vuetify = createVuetify({
   components,
   directives,
@@ -84,4 +89,8 @@ app.use(VueAxios, axios);
 app.config.globalProperties.axios = axios;
 app.use(VueVideoPlayer)
 app.use(i18n);
+app.use(ToastPlugin, {
+  position: 'bottom',
+  duration: 3000
+});
 app.mount("#app");
