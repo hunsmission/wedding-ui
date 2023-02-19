@@ -5,7 +5,9 @@ import {
   NaverMarker,
   NaverInfoWindow,
 } from "vue3-naver-maps";
+import { useToast } from 'vue-toast-notification';
 
+const $toast = useToast();
 const marker = ref();
 const infoWindow = ref();
 const isOpen = ref(true); // false: unvisible, true: visible
@@ -26,7 +28,7 @@ const mapOptions = {
 };
 
 const message = '서울시 영등포구 국회대로38길 2길';
-// const message = ({$t('address')})
+// const message2 = ({$t('address')})
 const onCopy = (e) => {
   $toast.open({
                 message: 'Copied to clipboard : ' + e.text,

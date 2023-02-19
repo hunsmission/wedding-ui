@@ -1,11 +1,13 @@
 <script setup>
 import { ref } from "vue";
 import MaterialButton from "@/components/MaterialButton.vue";
+import { useToast } from 'vue-toast-notification';
+const $toast = useToast();
 
 const mickeyAccount = '53602383401018';
 const mickeyFatherAccount = '46930201103044';
 const mickeyMotherAccount = '110517162913';
-const minnieAccount = '1002-246-198716'
+const minnieAccount = '1002246198716'
 const onCopy = (e) => {    
     $toast.open({
                 message: 'Copied to clipboard : ' + e.text,
@@ -139,44 +141,6 @@ const onError = (e) => {
         </div>
     </section>
 </template>
-
-<script>
-import { useToast } from 'vue-toast-notification';
-const $toast = useToast();
-
-export default {
-    data() {
-        return {
-            form: {
-                message: 'This is a sample message',
-                type: 'success',
-                duration: 10000,
-                dismissible: true,
-                queue: false,
-                position: 'bottom-right',
-                onClick: this.onClick,
-                onDismiss: this.onDismiss,
-            },
-            types: [
-                'success',
-                'error',
-                'warning',
-                'info',
-                'default',
-            ]
-        }
-    },
-    methods: {
-        executeToast() {
-            $toast.open({
-                message: 'Something went wrong!',
-                type: 'error',
-                // all of other options may go here
-            });
-        },
-    },
-}
-</script>
 
 <style>
 /* modal position(center)*/
