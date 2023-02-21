@@ -1,37 +1,23 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
-// import IconCall from "../../components/IconCall.vue";
-// import IconMessage from "../../components/IconMessage.vue";
 
-//example components
-import NavbarDefault from "../../examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
-// import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
+
 
 //Vue components
-import LagguageNavbar from "./Components/LanguageNavbar.vue";
-import MaterialButton from "@/components/MaterialButton.vue";
-import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
-import LanguageNavTab from "./Components/LanguageNavTab.vue";
+import LanguageNavbar from "./Components/LanguageNavbar.vue";
 
 // sections
 import WeddingInvitation from "./Sections/WeddingInvitation.vue";
 import WeddingInvitationMessage from "./Sections/WeddingInvitationMessage.vue";
-import WeddingPhotoLayout from "./Sections/WeddingPhotoLayout.vue";
+//import WeddingPhotoLayout from "./Sections/WeddingPhotoLayout.vue";
 import WeddingPhotoLayout2 from "./Sections/WeddingPhotoLayout2.vue";
 import WeddingVideo from "./Sections/WeddingVideo.vue";
 import WeddingContact from "./Sections/WeddingContact.vue";
 import WeddingMap from "./Sections/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/WeddingBankAccount.vue";
-import WeddingCelebrationBoard from "./Sections/WeddingCelebrationBoard.vue";
-
-import PresentationPages from "./Sections/PresentationPages.vue";
-import PresentationExample from "./Sections/PresentationExample.vue";
-import data from "./Sections/Data/designBlocksData";
-import BuiltByDevelopers from "./Components/BuiltByDevelopers.vue";
-import PresentationTestimonials from "./Sections/PresentationTestimonials.vue";
-import PresentationInformation from "./Sections/PresentationInformation.vue";
+//import WeddingCelebrationBoard from "./Sections/WeddingCelebrationBoard.vue";
 
 //images
 import vueMkHeader from "@/assets/img/wedding/wedding-main2.jpg";
@@ -52,7 +38,7 @@ onUnmounted(() => {
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <LagguageNavbar />        
+        <LanguageNavbar />        
         <!-- <NavbarDefault :sticky="false" /> -->
         <!-- <LanguageNavTab /> -->
       </div>
