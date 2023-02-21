@@ -76,26 +76,6 @@ const onError = (e) => {
                                     <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
                                 </button>
                             </p>
-                            <p style="color: black">
-                                <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMickeyInfo2') }}</strong><br>
-                                </small>
-                                <small>국민은행 469302-01-103044</small>&nbsp
-                                <button class="pl-1" type="button" v-clipboard:copy="mickeyFatherAccount"
-                                    v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
-                                </button>
-                            </p>
-                            <p style="color: black">
-                                <small class="text-uppercase font-weight-bold" style="color:black">
-                                    <strong style="color: black;">{{ $t('accountMickeyInfo3') }}</strong><br>
-                                </small>
-                                <small>신한은행 110-517-162913</small>&nbsp
-                                <button class="pl-1" type="button" v-clipboard:copy="mickeyMotherAccount"
-                                    v-clipboard:success="onCopy" v-clipboard:error="onError">
-                                    <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
-                                </button>
-                            </p>
                         </div>
                         <div class="modal-footer justify-content-between">
                             <MaterialButton variant="gradient" color="dark" data-bs-dismiss="modal">
