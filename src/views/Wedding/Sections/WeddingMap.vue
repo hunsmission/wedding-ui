@@ -25,55 +25,67 @@ const mapOptions = {
   zoom: 16,
   zoomControl: true,
   zoomControlOptions: { style: "SMALL", position: "TOP_LEFT" },
+  draggable: true
+};
+
+const mapOptions2 = {
+  latitude: 37.5267957,   // 지도 중앙 위도
+  longitude: 126.8989077, // 지도 중앙 경도
+  zoom: 16,
+  zoomControl: true,
+  zoomControlOptions: { style: "SMALL", position: "TOP_LEFT" },
+  draggable: false
 };
 
 const message = '서울시 영등포구 국회대로38길 2길';
 // const message2 = ({$t('address')})
 const onCopy = (e) => {
   $toast.open({
-                message: 'Copied to clipboard : ' + e.text,
-                type: 'default',
-                position: 'bottom',
-                duration: 1500,
-                queue: true               
-    });
+    message: 'Copied to clipboard : ' + e.text,
+    type: 'default',
+    position: 'bottom',
+    duration: 1500,
+    queue: true
+  });
 };
 const onError = (e) => {
   $toast.open({
-                message: 'Failed Copied to clipboard : ',
-                type: 'error',
-                position: 'bottom',
-                duration: 1500,
-                queue: true               
-    });
+    message: 'Failed Copied to clipboard : ',
+    type: 'error',
+    position: 'bottom',
+    duration: 1500,
+    queue: true
+  });
 };
+
+
 </script>
 
 <template>
-  <section class="pt-3 pb-4" id="wedding-map" > <!-- style="background-color: #F2F2F2" -->
+  <section class="pt-3 pb-4" id="wedding-map"> <!-- style="background-color: #F2F2F2" -->
     <div class="row">
-            <hr style="border: solid 3px #f881b4; width: 100%">  
+      <hr style="border: solid 3px #f881b4; width: 100%">
     </div>
     <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
       Location <br>
-      <h6 style="color:black">{{ $t('mapTitle')}}</h6>
+    <h6 style="color:black">{{ $t('mapTitle') }}</h6>
     </p>
     <!-- Map -->
     <div class="pt-4">
-      <naver-map style="width: 100%; height: 400px" :mapOptions="mapOptions">
-        <naver-marker @click="isOpen = !isOpen" :latitude="37.5267957" :longitude="126.8989077" 
-          @onLoad="onLoadMarker($event)" >
+      <naver-map id="naverMap" style="width: 100%; height: 400px" :mapOptions="mapOptions" @click="clickMap($event)">
+        <naver-marker @click="isOpen = !isOpen" :latitude="37.5267957" :longitude="126.8989077"
+          @onLoad="onLoadMarker($event)">
         </naver-marker>
         <naver-info-window :marker="marker" :open="isOpen" @onLoad="onLoadInfoWindow($event)">
-          <div class="infowindow-style"><strong>{{ $t('location3')}}</strong></div>
+          <div class="infowindow-style"><strong>{{ $t('location3') }}</strong></div>
         </naver-info-window>
       </naver-map>
     </div>
     <!-- Address-->
     <div class="pt-3 pl-3"> <!-- style="border: 1px solid;"> -->
       <h7 class="mb-1" style="color:black">
-        <strong>{{ $t('location2')}}</strong>
-        <br>{{ $t('address')}}
+        <strong>{{ $t('location2') }}</strong>
+        <br>{{ $t('address') }}
         <button class="pl-1" type="button" v-clipboard:copy="message" v-clipboard:success="onCopy"
           v-clipboard:error="onError">
           <img src="../../../assets/ico/copy-icon.png" style="width:15px; height: 15px;">
@@ -82,10 +94,10 @@ const onError = (e) => {
       </h7>
       <br>
       <small class="text-uppercase font-weight-bold" style="color:black">
-        <br><strong style="color: orchid;">{{ $t('subway')}}</strong>: {{ $t('subwayContent1')}}
-        <br>{{ $t('subwayContent2')}}
-        <br>&#11088 <strong>{{ $t('subwayContent3')}}</strong>{{ $t('subwayContent4')}} &#11088
-        <br><strong style="color: orchid;">{{ $t('bus')}}</strong>: 70-3, 5620, 6631, 6637, 7612, 영등포 02
+        <br><strong style="color: orchid;">{{ $t('subway') }}</strong>: {{ $t('subwayContent1') }}
+        <br>{{ $t('subwayContent2') }}
+        <br>&#11088 <strong>{{ $t('subwayContent3') }}</strong>{{ $t('subwayContent4') }} &#11088
+        <br><strong style="color: orchid;">{{ $t('bus') }}</strong>: 70-3, 5620, 6631, 6637, 7612, 영등포 02
       </small>
       <br>
     </div>
@@ -101,13 +113,13 @@ const onError = (e) => {
         <li style="margin-bottom: 5px;">
           <img src="../../../assets/ico/KakaoNavi.png" style="width:33%; height: 33%;" @click='kakaoMapApiCall'>
         </li>
-        <li>{{ $t('kakaoNavi')}}</li>
+        <li>{{ $t('kakaoNavi') }}</li>
       </ul>
       <ul>
         <li style="margin-bottom: 5px;">
           <img src="../../../assets/ico/NaverMap.png" style="width:33%; height: 33%;" @click='naverMapApiCall'>
         </li>
-        <li>{{ $t('naverMap')}}</li>
+        <li>{{ $t('naverMap') }}</li>
       </ul>
     </div>
   </section>
@@ -123,12 +135,12 @@ import {
 import axios from 'axios';
 import { width } from "dom7";
 
-export default {  
-  methods: {    
+export default {
+  methods: {
     tmapApiCall: function () {
       window.open("https://apis.openapi.sk.com/tmap/app/routes?appKey=VkWiVJf1eQ5V97drsC4Y78WWITyPPLzv5YCW8qOF&name=더컨벤션영등포점&lon=126.8989077&lat=37.5267957", "_blank");
     },
-    kakaoMapApiCall: function () {        
+    kakaoMapApiCall: function () {
       window.Kakao.Navi.share({
         name: '더컨벤션영등포점',
         x: 126.8989077,
@@ -139,6 +151,15 @@ export default {
     naverMapApiCall: function () {
       window.open("nmap://place?lat=37.5267957&lng=126.8989077&name=더컨벤션영등포점&appname=WeddingInvitation", "_blank");
     },
+    clickMap: function () {
+      if (this.NaverMap.draggable == true) {
+        document.getElementById("naverMap").setAttribute('mapOptions', mapOptions2);
+      }
+     else {
+        document.getElementById("naverMap").setAttribute('mapOptions', mapOptions);
+      }
+
+    }
   },
 }
 </script>
@@ -150,6 +171,6 @@ export default {
   text-align: center;
   font-weight: 600;
   font-size: 10px;
-  width: 100px;  
+  width: 100px;
 }
 </style>
