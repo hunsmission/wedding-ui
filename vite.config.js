@@ -5,7 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/invite-common',
+  base: '/invite-common/',
   server: {
     port: 8082,
     host: true
