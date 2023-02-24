@@ -52,7 +52,8 @@ onUnmounted(() => {
   <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <LagguageNavbar />        
+        <LagguageNavbar />   
+        <!-- <NavbarDefault :sticky="false" />      -->
         <!-- <NavbarDefault :sticky="false" /> -->
         <!-- <LanguageNavTab /> -->
       </div>
@@ -78,7 +79,7 @@ onUnmounted(() => {
     <WeddingMap />
     <WeddingBankAccount />
     <!-- <WeddingBankAccount2 /> -->
-    <!-- <WeddingCelebrationBoard /> -->
+    <!-- <WeddingCelebrationBoard /> -->    
   </div>
 
   <DefaultFooter />
