@@ -24,7 +24,7 @@ defineProps({
       :name="id"
       :checked="checked"
     />
-    <label class="form-check-label d-block" :class="labelClass" :for="id"
+    <label class="form-check-label d-block" :class="labelClass" :for="id" v-on:click.prevent="handleClick" 
       ><slot
     /></label>
     <slot name="description" v-if="$slots.description" />

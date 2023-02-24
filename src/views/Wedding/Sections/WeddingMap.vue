@@ -3,33 +3,37 @@
     <div class="row">
       <hr style="border: solid 3px #f881b4; width: 100%">
     </div>
+
     <p class="lead text-black px-1" :style="{ fontWeight: '700', fontSize: '80%', marginBottom: '1px' }">
       Location <br>
-    <h6 style="color:black">{{ $t('mapTitle') }}</h6>
+    <ul style="list-style:none">
+      <li style="float:left">
+        <h6 style="color:black">{{ $t('mapTitle') }}</h6>
+      </li>
+      <li class="mt-0" style="float:right">
+        <MaterialSwitch class="mb-0" id="flexSwitchCheckDefault1" labelClass="text-dark font-weight-bold d-block text-sm ml-0"
+          @click="toggleDraggable">
+        </MaterialSwitch>
+      </li>
+      <li class="mt-2 mr-2" style="float:right; color: #606060;">
+        {{ $t('mapDraggable') }}
+      </li>
+
+    </ul>
     </p>
+
     <!-- Map -->
-    <div class="pt-4">
-      <NaverMap :key="mapKey" style="width: 100%; height: 400px"  :mapOptions="mapOptions">
-      <!-- <NaverMap style="width: 100%; height: 400px" :options="mapOptions"> -->
+    <div class="pt-3">
+      <NaverMap :key="mapKey" style="width: 100%; height: 400px" :mapOptions="mapOptions">
+        <!-- <NaverMap style="width: 100%; height: 400px" :options="mapOptions"> -->
         <naver-marker @click="isOpen = !isOpen" :latitude="37.5267957" :longitude="126.8989077"
           @onLoad="onLoadMarker($event)">
         </naver-marker>
         <naver-info-window :marker="marker" :open="isOpen" @onLoad="onLoadInfoWindow($event)">
           <div class="infowindow-style"><strong>{{ $t('location3') }}</strong></div>
         </naver-info-window>
-      <!-- </NaverMap> -->
-
+        <!-- </NaverMap> -->
       </NaverMap>
-      <!-- Toggle -->
-      <div class="d-flex justify-content-center align-items-center pt-4">
-        <MaterialSwitch class="mb-0" id="flexSwitchCheckDefault1" labelClass="text-dark font-weight-bold d-block text-sm"
-          @click="toggleDraggable">
-          지도 움직이기
-          <!-- <template #description>
-              <span class="ms-1 text-xs d-block">Be sure that you will always be logged in.</span>
-            </template> -->
-        </MaterialSwitch>
-      </div>
     </div>
     <!-- Address-->
     <div class="pt-3 pl-3"> <!-- style="border: 1px solid;"> -->
@@ -132,9 +136,7 @@ const onError = (e) => {
 const mapKey = ref(0);
 
 function toggleDraggable() {
-  // draggable 속성 토글  
-  mapOptions.value.draggable = !mapOptions.value.draggable;
-  console.log(mapOptions.draggable)
+  mapOptions.value.draggable = !mapOptions.value.draggable; 
   mapKey.value += 1;
 }
 
@@ -149,7 +151,7 @@ export default {
   },
   setup() {
     return {
-      mapOptions, 
+      mapOptions,
       toggleDraggable,
       onCopy,
       onError
