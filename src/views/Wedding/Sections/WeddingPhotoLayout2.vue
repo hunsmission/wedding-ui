@@ -8,7 +8,8 @@
             <!-- <h6 style="color:black">성훈 &#10084; 진원 Love Story</h6> -->
         </p>
         <div class="wedding-photo" v-viewer="viewerOptions">
-            <swiper class="swiper" :modules="modules" :pagination="true" :effect="'coverflow'" :grab-cursor="true"
+            <swiper class="swiper" :modules="modules"  :effect="'coverflow'" :grab-cursor="true"    
+                :pagination="{ clickable: true, dynamicBullets: true }"                           
                 :centered-slides="true" :slides-per-view="'auto'" :coverflow-effect="{
                     rotate: 50,
                     stretch: 0,
@@ -16,7 +17,7 @@
                     modifier: 1,
                     slideShadows: true                    
                 }"           
-                :loop="true"      
+                :loop="true"                     
                 >
                 <swiper-slide class="slide" v-for="item in items" :key="item.title">
                     <img img :src="item.image" @click="show"/> 
@@ -28,7 +29,7 @@
 
 <script>
 import { Pagination, EffectCoverflow } from 'swiper'
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
@@ -89,6 +90,11 @@ export default {
                     image: new URL(`../../../assets/img/wedding/wedding-5.jpg`, import.meta.url).href
                 },
                 {
+                    title: 'Wedding Photo 6',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
+                },
+                {
                     title: 'Wedding Photo 7',
                     content: 'Mickey Love Minnie',
                     image: new URL(`../../../assets/img/wedding/wedding-7.jpg`, import.meta.url).href
@@ -134,17 +140,92 @@ export default {
                     image: new URL(`../../../assets/img/wedding/wedding-15.jpg`, import.meta.url).href
                 },
                 {
-                    title: 'Wedding Photo 6',
+                    title: 'Wedding Photo 16',
                     content: 'Mickey Love Minnie',
-                    image: new URL(`../../../assets/img/wedding/wedding-6.jpg`, import.meta.url).href
+                    image: new URL(`../../../assets/img/wedding/wedding-16.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 17',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-17.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 18',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-18.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 19',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-19.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 20',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-20.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 21',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-21.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 22',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-22.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 23',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-23.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 24',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-24.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 25',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-25.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 26',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-26.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 27',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-27.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 28',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-28.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 29',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-29.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 30',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-30.jpg`, import.meta.url).href
+                },
+                {
+                    title: 'Wedding Photo 31',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-31.jpg`, import.meta.url).href
                 },
             ],
         }
     },
     methods: {
         show() {
-            const viewer = this.$el.querySelector('.images').$viewer
-            viewer.show()
+            // const viewer = this.$el.querySelector('.images').$viewer
+            // viewer.show()
         },
     }
 
@@ -177,7 +258,8 @@ export default {
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            // object-fit: cover;
+            object-fit: contain;
         }
     }
 }

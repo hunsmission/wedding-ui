@@ -21,6 +21,7 @@ import WeddingInvitationMessage from "./Sections/WeddingInvitationMessage.vue";
 import WeddingPhotoLayout from "./Sections/WeddingPhotoLayout.vue";
 import WeddingPhotoLayout2 from "./Sections/WeddingPhotoLayout2.vue";
 import WeddingVideo from "./Sections/WeddingVideo.vue";
+import WeddingVideoCommon from "./Sections/WeddingVideoCommon.vue";
 import WeddingContact from "./Sections/WeddingContact.vue";
 import WeddingMap from "./Sections/WeddingMap.vue";
 import WeddingBankAccount from "./Sections/WeddingBankAccount.vue";
@@ -74,6 +75,7 @@ onUnmounted(() => {
     <WeddingContact />
     <!-- <WeddingPhotoLayout /> -->
     <WeddingPhotoLayout2 />
+    <WeddingVideoCommon />
     <WeddingVideo />
     <WeddingMap />
     <WeddingBankAccount />

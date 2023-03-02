@@ -15,8 +15,8 @@ import { ref } from "vue";
             <hr style="border: solid 1px #00ff0000 ; width: 100%">
         </div>
         <div class="pt-1">
-            <video controls width="100%" poster="../../../assets/video/video-poster.png" >
-                <source src="../../../assets/video/wedding-video.mp4"  type="video/mp4" />
+            <video controls width="100%" poster="../../../assets/video/video-promise-poster.png" >
+                <source src="../../../assets/video/wedding-promise.mp4"  type="video/mp4" />
             </video>
             <!-- <video-player src="../../../assets/video/wedding-video.mp4" type="video/mp4"  controls :loop="false" 
                 :volume="0.6" /> -->
