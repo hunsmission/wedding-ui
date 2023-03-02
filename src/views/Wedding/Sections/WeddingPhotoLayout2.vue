@@ -205,6 +205,11 @@ export default {
                     image: new URL(`../../../assets/img/wedding/wedding-28.jpg`, import.meta.url).href
                 },
                 {
+                    title: 'Wedding Photo 28-1',
+                    content: 'Mickey Love Minnie',
+                    image: new URL(`../../../assets/img/wedding/wedding-28-1.jpg`, import.meta.url).href
+                },
+                {
                     title: 'Wedding Photo 29',
                     content: 'Mickey Love Minnie',
                     image: new URL(`../../../assets/img/wedding/wedding-29.jpg`, import.meta.url).href
